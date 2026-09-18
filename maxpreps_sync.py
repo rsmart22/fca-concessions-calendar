@@ -176,10 +176,23 @@ def build_ics(games):
     for date, gs in sorted(days.items()):
         gs.sort(key=lambda g: g["time"] or "99:99")
         timed = [g for g in gs if g["time"]]
-        parts = " / ".join(f"{g['team']} {fmt12(g['time'])}" for g in gs)
-        opps = sorted({g["opponent"] for g in gs if g["opponent"] not in ("TBD", "JV Opponent")})
-        summary = f"Concessions: {parts}" + (f" vs {', '.join(opps)}" if opps else "")
-        desc = "\n".join(f"{g['team']}: {fmt12(g['time'])} vs {g['opponent']}" for g in gs)
+        # Title leads with "how big is this day": e.g. "BB 4 of 4 teams - 1st game 4:30pm - NCA"
+        # Sport = first word of the team label; "of N" = how many teams of that sport are in TEAMS.
+        sports = []
+        for g in gs:
+            sp = g["team"].split()[0]
+            if sp not in sports:
+                sports.append(sp)
+        counts = []
+        for sp in sports:
+            playing = len({g["team"] for g in gs if g["team"].split()[0] == sp})
+            total = sum(1 for label, _ in TEAMS if label.split()[0] == sp)
+            counts.append(f"{sp} {playing} of {max(total, playing)} teams")
+        opps = sorted({g["opponent"] for g in gs
+                       if g["opponent"] != "TBD" and not g["opponent"].endswith(" Opponent")})
+        first = fmt12(timed[0]["time"]) if timed else "TBA"
+        summary = " + ".join(counts) + f" - 1st game {first}" + (f" - {'/'.join(opps)}" if opps else "")
+        desc = " + ".join(counts) + " playing\n\n" + "\n".join(f"{g['team']}: {fmt12(g['time'])} vs {g['opponent']}" for g in gs)
         desc += f"\n\nEvent starts {LEAD_MINUTES} min before first game. Source: MaxPreps (auto-synced)."
         out += ["BEGIN:VEVENT", f"UID:concessions-{date}@maxpreps-sync", f"DTSTAMP:{now}"]
         if timed:
