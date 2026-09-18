@@ -21,5 +21,9 @@ jobs:
           git config user.name "schedule-bot"
           git config user.email "bot@users.noreply.github.com"
           git add docs/concessions.ics state.json
-          git diff --cached --quiet -- state.json || git commit -m "Schedule update"
-          git push || true
+          if [ -n "$(git diff --cached -I'^DTSTAMP' -- docs/concessions.ics state.json)" ]; then
+            git commit -m "Schedule update"
+            git push
+          else
+            echo "No changes"
+          fi
