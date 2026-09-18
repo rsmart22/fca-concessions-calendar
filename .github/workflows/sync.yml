@@ -1,0 +1,25 @@
+name: Sync MaxPreps schedule
+on:
+  schedule:
+    - cron: "7 * * * *"      # hourly, at :07
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install requests beautifulsoup4
+      - run: python maxpreps_sync.py
+        env:
+          NOTIFY_WEBHOOK: ${{ secrets.NOTIFY_WEBHOOK }}
+      - name: Commit if changed
+        run: |
+          git config user.name "schedule-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add docs/concessions.ics state.json
+          git diff --cached --quiet -- state.json || git commit -m "Schedule update"
+          git push || true
