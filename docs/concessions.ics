@@ -7,132 +7,132 @@ REFRESH-INTERVAL;VALUE=DURATION:PT1H
 X-PUBLISHED-TTL:PT1H
 BEGIN:VEVENT
 UID:concessions-volleyball-2026-08-14@maxpreps-sync
-DTSTAMP:20260918T164831Z
-DTSTART:20260814T190000Z
+DTSTAMP:20260918T170827Z
+DTSTART:20260814T183000Z
 DTEND:20260814T233000Z
 SUMMARY:Concessions Volleyball: MS 4:30pm / Varsity 5:30pm vs Westwood Chr
  istian
 DESCRIPTION:MS: 4:30pm vs Westwood Christian\nVarsity: 5:30pm vs Westwood 
- Christian\n\nEvent starts 90 min before first game. Source: MaxPreps (aut
- o-synced).
+ Christian\n\nEvent starts 120 min before first game. Source: MaxPreps (au
+ to-synced).
 LOCATION:First Christian\, 24530 NW 199th Ln\, High Springs\, FL 32643
 END:VEVENT
 BEGIN:VEVENT
 UID:concessions-volleyball-2026-08-18@maxpreps-sync
-DTSTAMP:20260918T164831Z
-DTSTART:20260818T183000Z
+DTSTAMP:20260918T170827Z
+DTSTART:20260818T180000Z
 DTEND:20260818T220000Z
 SUMMARY:Concessions Volleyball: MS 4:00pm
-DESCRIPTION:MS: 4:00pm vs JV Opponent\n\nEvent starts 90 min before first 
- game. Source: MaxPreps (auto-synced).
+DESCRIPTION:MS: 4:00pm vs JV Opponent\n\nEvent starts 120 min before first
+  game. Source: MaxPreps (auto-synced).
 LOCATION:First Christian\, 24530 NW 199th Ln\, High Springs\, FL 32643
 END:VEVENT
 BEGIN:VEVENT
 UID:concessions-volleyball-2026-08-21@maxpreps-sync
-DTSTAMP:20260918T164831Z
-DTSTART:20260821T191500Z
+DTSTAMP:20260918T170827Z
+DTSTART:20260821T184500Z
 DTEND:20260821T224500Z
 SUMMARY:Concessions Volleyball: Varsity 4:45pm vs Westwood Christian
-DESCRIPTION:Varsity: 4:45pm vs Westwood Christian\n\nEvent starts 90 min b
- efore first game. Source: MaxPreps (auto-synced).
-LOCATION:First Christian\, 24530 NW 199th Ln\, High Springs\, FL 32643
-END:VEVENT
-BEGIN:VEVENT
-UID:concessions-volleyball-2026-08-24@maxpreps-sync
-DTSTAMP:20260918T164831Z
-DTSTART:20260824T183000Z
-DTEND:20260824T230000Z
-SUMMARY:Concessions Volleyball: MS 4:00pm / Varsity 5:00pm vs Hope Christi
- an Academy
-DESCRIPTION:MS: 4:00pm vs Hope Christian Academy\nVarsity: 5:00pm vs Hope 
- Christian Academy\n\nEvent starts 90 min before first game. Source: MaxPr
- eps (auto-synced).
-LOCATION:First Christian\, 24530 NW 199th Ln\, High Springs\, FL 32643
-END:VEVENT
-BEGIN:VEVENT
-UID:concessions-volleyball-2026-09-01@maxpreps-sync
-DTSTAMP:20260918T164831Z
-DTSTART:20260901T190000Z
-DTEND:20260901T233000Z
-SUMMARY:Concessions Volleyball: MS 4:30pm / Varsity 5:30pm vs FACA
-DESCRIPTION:MS: 4:30pm vs FACA\nVarsity: 5:30pm vs FACA\n\nEvent starts 90
-  min before first game. Source: MaxPreps (auto-synced).
-LOCATION:First Christian\, 24530 NW 199th Ln\, High Springs\, FL 32643
-END:VEVENT
-BEGIN:VEVENT
-UID:concessions-volleyball-2026-09-03@maxpreps-sync
-DTSTAMP:20260918T164831Z
-DTSTART:20260903T183000Z
-DTEND:20260903T230000Z
-SUMMARY:Concessions Volleyball: MS 4:00pm / Varsity 5:00pm vs Bronson
-DESCRIPTION:MS: 4:00pm vs JV Opponent\nVarsity: 5:00pm vs Bronson\n\nEvent
-  starts 90 min before first game. Source: MaxPreps (auto-synced).
-LOCATION:First Christian\, 24530 NW 199th Ln\, High Springs\, FL 32643
-END:VEVENT
-BEGIN:VEVENT
-UID:concessions-volleyball-2026-09-10@maxpreps-sync
-DTSTAMP:20260918T164831Z
-DTSTART:20260910T193000Z
-DTEND:20260910T230000Z
-SUMMARY:Concessions Volleyball: Varsity 5:00pm vs NCA
-DESCRIPTION:Varsity: 5:00pm vs NCA\n\nEvent starts 90 min before first gam
- e. Source: MaxPreps (auto-synced).
-LOCATION:First Christian\, 24530 NW 199th Ln\, High Springs\, FL 32643
-END:VEVENT
-BEGIN:VEVENT
-UID:concessions-volleyball-2026-09-15@maxpreps-sync
-DTSTAMP:20260918T164831Z
-DTSTART:20260915T183000Z
-DTEND:20260915T230000Z
-SUMMARY:Concessions Volleyball: MS 4:00pm / Varsity 5:00pm vs Countryside 
- Christian
-DESCRIPTION:MS: 4:00pm vs Countryside Christian\nVarsity: 5:00pm vs Countr
- yside Christian\n\nEvent starts 90 min before first game. Source: MaxPrep
- s (auto-synced).
-LOCATION:First Christian\, 24530 NW 199th Ln\, High Springs\, FL 32643
-END:VEVENT
-BEGIN:VEVENT
-UID:concessions-volleyball-2026-09-17@maxpreps-sync
-DTSTAMP:20260918T164831Z
-DTSTART:20260917T193000Z
-DTEND:20260918T000000Z
-SUMMARY:Concessions Volleyball: MS 5:00pm / Varsity 6:00pm vs GCCHS
-DESCRIPTION:MS: 5:00pm vs GCCHS\nVarsity: 6:00pm vs GCCHS\n\nEvent starts 
- 90 min before first game. Source: MaxPreps (auto-synced).
-LOCATION:First Christian\, 24530 NW 199th Ln\, High Springs\, FL 32643
-END:VEVENT
-BEGIN:VEVENT
-UID:concessions-volleyball-2026-09-18@maxpreps-sync
-DTSTAMP:20260918T164831Z
-DTSTART:20260918T183000Z
-DTEND:20260918T230000Z
-SUMMARY:Concessions Volleyball: MS 4:00pm / Varsity 5:00pm vs Corinth Chri
- stian Academy
-DESCRIPTION:MS: 4:00pm vs Corinth Christian Academy\nVarsity: 5:00pm vs Co
- rinth Christian Academy\n\nEvent starts 90 min before first game. Source:
-  MaxPreps (auto-synced).
-LOCATION:First Christian\, 24530 NW 199th Ln\, High Springs\, FL 32643
-END:VEVENT
-BEGIN:VEVENT
-UID:concessions-volleyball-2026-09-24@maxpreps-sync
-DTSTAMP:20260918T164831Z
-DTSTART:20260924T193000Z
-DTEND:20260924T230000Z
-SUMMARY:Concessions Volleyball: Varsity 5:00pm vs Riverside Christian
-DESCRIPTION:Varsity: 5:00pm vs Riverside Christian\n\nEvent starts 90 min 
+DESCRIPTION:Varsity: 4:45pm vs Westwood Christian\n\nEvent starts 120 min 
  before first game. Source: MaxPreps (auto-synced).
 LOCATION:First Christian\, 24530 NW 199th Ln\, High Springs\, FL 32643
 END:VEVENT
 BEGIN:VEVENT
+UID:concessions-volleyball-2026-08-24@maxpreps-sync
+DTSTAMP:20260918T170827Z
+DTSTART:20260824T180000Z
+DTEND:20260824T230000Z
+SUMMARY:Concessions Volleyball: MS 4:00pm / Varsity 5:00pm vs Hope Christi
+ an Academy
+DESCRIPTION:MS: 4:00pm vs Hope Christian Academy\nVarsity: 5:00pm vs Hope 
+ Christian Academy\n\nEvent starts 120 min before first game. Source: MaxP
+ reps (auto-synced).
+LOCATION:First Christian\, 24530 NW 199th Ln\, High Springs\, FL 32643
+END:VEVENT
+BEGIN:VEVENT
+UID:concessions-volleyball-2026-09-01@maxpreps-sync
+DTSTAMP:20260918T170827Z
+DTSTART:20260901T183000Z
+DTEND:20260901T233000Z
+SUMMARY:Concessions Volleyball: MS 4:30pm / Varsity 5:30pm vs FACA
+DESCRIPTION:MS: 4:30pm vs FACA\nVarsity: 5:30pm vs FACA\n\nEvent starts 12
+ 0 min before first game. Source: MaxPreps (auto-synced).
+LOCATION:First Christian\, 24530 NW 199th Ln\, High Springs\, FL 32643
+END:VEVENT
+BEGIN:VEVENT
+UID:concessions-volleyball-2026-09-03@maxpreps-sync
+DTSTAMP:20260918T170827Z
+DTSTART:20260903T180000Z
+DTEND:20260903T230000Z
+SUMMARY:Concessions Volleyball: MS 4:00pm / Varsity 5:00pm vs Bronson
+DESCRIPTION:MS: 4:00pm vs JV Opponent\nVarsity: 5:00pm vs Bronson\n\nEvent
+  starts 120 min before first game. Source: MaxPreps (auto-synced).
+LOCATION:First Christian\, 24530 NW 199th Ln\, High Springs\, FL 32643
+END:VEVENT
+BEGIN:VEVENT
+UID:concessions-volleyball-2026-09-10@maxpreps-sync
+DTSTAMP:20260918T170827Z
+DTSTART:20260910T190000Z
+DTEND:20260910T230000Z
+SUMMARY:Concessions Volleyball: Varsity 5:00pm vs NCA
+DESCRIPTION:Varsity: 5:00pm vs NCA\n\nEvent starts 120 min before first ga
+ me. Source: MaxPreps (auto-synced).
+LOCATION:First Christian\, 24530 NW 199th Ln\, High Springs\, FL 32643
+END:VEVENT
+BEGIN:VEVENT
+UID:concessions-volleyball-2026-09-15@maxpreps-sync
+DTSTAMP:20260918T170827Z
+DTSTART:20260915T180000Z
+DTEND:20260915T230000Z
+SUMMARY:Concessions Volleyball: MS 4:00pm / Varsity 5:00pm vs Countryside 
+ Christian
+DESCRIPTION:MS: 4:00pm vs Countryside Christian\nVarsity: 5:00pm vs Countr
+ yside Christian\n\nEvent starts 120 min before first game. Source: MaxPre
+ ps (auto-synced).
+LOCATION:First Christian\, 24530 NW 199th Ln\, High Springs\, FL 32643
+END:VEVENT
+BEGIN:VEVENT
+UID:concessions-volleyball-2026-09-17@maxpreps-sync
+DTSTAMP:20260918T170827Z
+DTSTART:20260917T190000Z
+DTEND:20260918T000000Z
+SUMMARY:Concessions Volleyball: MS 5:00pm / Varsity 6:00pm vs GCCHS
+DESCRIPTION:MS: 5:00pm vs GCCHS\nVarsity: 6:00pm vs GCCHS\n\nEvent starts 
+ 120 min before first game. Source: MaxPreps (auto-synced).
+LOCATION:First Christian\, 24530 NW 199th Ln\, High Springs\, FL 32643
+END:VEVENT
+BEGIN:VEVENT
+UID:concessions-volleyball-2026-09-18@maxpreps-sync
+DTSTAMP:20260918T170827Z
+DTSTART:20260918T180000Z
+DTEND:20260918T230000Z
+SUMMARY:Concessions Volleyball: MS 4:00pm / Varsity 5:00pm vs Corinth Chri
+ stian Academy
+DESCRIPTION:MS: 4:00pm vs Corinth Christian Academy\nVarsity: 5:00pm vs Co
+ rinth Christian Academy\n\nEvent starts 120 min before first game. Source
+ : MaxPreps (auto-synced).
+LOCATION:First Christian\, 24530 NW 199th Ln\, High Springs\, FL 32643
+END:VEVENT
+BEGIN:VEVENT
+UID:concessions-volleyball-2026-09-24@maxpreps-sync
+DTSTAMP:20260918T170827Z
+DTSTART:20260924T190000Z
+DTEND:20260924T230000Z
+SUMMARY:Concessions Volleyball: Varsity 5:00pm vs Riverside Christian
+DESCRIPTION:Varsity: 5:00pm vs Riverside Christian\n\nEvent starts 120 min
+  before first game. Source: MaxPreps (auto-synced).
+LOCATION:First Christian\, 24530 NW 199th Ln\, High Springs\, FL 32643
+END:VEVENT
+BEGIN:VEVENT
 UID:concessions-volleyball-2026-09-29@maxpreps-sync
-DTSTAMP:20260918T164831Z
-DTSTART:20260929T183000Z
+DTSTAMP:20260918T170827Z
+DTSTART:20260929T180000Z
 DTEND:20260929T230000Z
 SUMMARY:Concessions Volleyball: MS 4:00pm / Varsity 5:00pm vs Hart 2 Hart 
  Academy
 DESCRIPTION:MS: 4:00pm vs JV Opponent\nVarsity: 5:00pm vs Hart 2 Hart Acad
- emy\n\nEvent starts 90 min before first game. Source: MaxPreps (auto-sync
- ed).
+ emy\n\nEvent starts 120 min before first game. Source: MaxPreps (auto-syn
+ ced).
 LOCATION:First Christian\, 24530 NW 199th Ln\, High Springs\, FL 32643
 END:VEVENT
 END:VCALENDAR
