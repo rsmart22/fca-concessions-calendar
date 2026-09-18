@@ -7,328 +7,316 @@ REFRESH-INTERVAL;VALUE=DURATION:PT1H
 X-PUBLISHED-TTL:PT1H
 BEGIN:VEVENT
 UID:concessions-2026-08-14@maxpreps-sync
-DTSTAMP:20260918T174144Z
+DTSTAMP:20260918T174702Z
 DTSTART:20260814T183000Z
 DTEND:20260814T233000Z
-SUMMARY:Concessions: VB MS 4:30pm / VB Varsity 5:30pm vs Westwood Christia
- n
-DESCRIPTION:VB MS: 4:30pm vs Westwood Christian\nVB Varsity: 5:30pm vs Wes
- twood Christian\n\nEvent starts 120 min before first game. Source: MaxPre
- ps (auto-synced).
+SUMMARY:VB 2 of 2 teams - 1st game 4:30pm - Westwood Christian
+DESCRIPTION:VB 2 of 2 teams playing\n\nVB MS: 4:30pm vs Westwood Christian
+ \nVB Varsity: 5:30pm vs Westwood Christian\n\nEvent starts 120 min before
+  first game. Source: MaxPreps (auto-synced).
 LOCATION:First Christian\, 24530 NW 199th Ln\, High Springs\, FL 32643
 END:VEVENT
 BEGIN:VEVENT
 UID:concessions-2026-08-18@maxpreps-sync
-DTSTAMP:20260918T174144Z
+DTSTAMP:20260918T174702Z
 DTSTART:20260818T180000Z
 DTEND:20260818T220000Z
-SUMMARY:Concessions: VB MS 4:00pm
-DESCRIPTION:VB MS: 4:00pm vs JV Opponent\n\nEvent starts 120 min before fi
- rst game. Source: MaxPreps (auto-synced).
+SUMMARY:VB 1 of 2 teams - 1st game 4:00pm
+DESCRIPTION:VB 1 of 2 teams playing\n\nVB MS: 4:00pm vs JV Opponent\n\nEve
+ nt starts 120 min before first game. Source: MaxPreps (auto-synced).
 LOCATION:First Christian\, 24530 NW 199th Ln\, High Springs\, FL 32643
 END:VEVENT
 BEGIN:VEVENT
 UID:concessions-2026-08-21@maxpreps-sync
-DTSTAMP:20260918T174144Z
+DTSTAMP:20260918T174702Z
 DTSTART:20260821T184500Z
 DTEND:20260821T224500Z
-SUMMARY:Concessions: VB Varsity 4:45pm vs Westwood Christian
-DESCRIPTION:VB Varsity: 4:45pm vs Westwood Christian\n\nEvent starts 120 m
- in before first game. Source: MaxPreps (auto-synced).
+SUMMARY:VB 1 of 2 teams - 1st game 4:45pm - Westwood Christian
+DESCRIPTION:VB 1 of 2 teams playing\n\nVB Varsity: 4:45pm vs Westwood Chri
+ stian\n\nEvent starts 120 min before first game. Source: MaxPreps (auto-s
+ ynced).
 LOCATION:First Christian\, 24530 NW 199th Ln\, High Springs\, FL 32643
 END:VEVENT
 BEGIN:VEVENT
 UID:concessions-2026-08-24@maxpreps-sync
-DTSTAMP:20260918T174144Z
+DTSTAMP:20260918T174702Z
 DTSTART:20260824T180000Z
 DTEND:20260824T230000Z
-SUMMARY:Concessions: VB MS 4:00pm / VB Varsity 5:00pm vs Hope Christian Ac
- ademy
-DESCRIPTION:VB MS: 4:00pm vs Hope Christian Academy\nVB Varsity: 5:00pm vs
-  Hope Christian Academy\n\nEvent starts 120 min before first game. Source
- : MaxPreps (auto-synced).
+SUMMARY:VB 2 of 2 teams - 1st game 4:00pm - Hope Christian Academy
+DESCRIPTION:VB 2 of 2 teams playing\n\nVB MS: 4:00pm vs Hope Christian Aca
+ demy\nVB Varsity: 5:00pm vs Hope Christian Academy\n\nEvent starts 120 mi
+ n before first game. Source: MaxPreps (auto-synced).
 LOCATION:First Christian\, 24530 NW 199th Ln\, High Springs\, FL 32643
 END:VEVENT
 BEGIN:VEVENT
 UID:concessions-2026-09-01@maxpreps-sync
-DTSTAMP:20260918T174144Z
+DTSTAMP:20260918T174702Z
 DTSTART:20260901T183000Z
 DTEND:20260901T233000Z
-SUMMARY:Concessions: VB MS 4:30pm / VB Varsity 5:30pm vs FACA
-DESCRIPTION:VB MS: 4:30pm vs FACA\nVB Varsity: 5:30pm vs FACA\n\nEvent sta
- rts 120 min before first game. Source: MaxPreps (auto-synced).
+SUMMARY:VB 2 of 2 teams - 1st game 4:30pm - FACA
+DESCRIPTION:VB 2 of 2 teams playing\n\nVB MS: 4:30pm vs FACA\nVB Varsity: 
+ 5:30pm vs FACA\n\nEvent starts 120 min before first game. Source: MaxPrep
+ s (auto-synced).
 LOCATION:First Christian\, 24530 NW 199th Ln\, High Springs\, FL 32643
 END:VEVENT
 BEGIN:VEVENT
 UID:concessions-2026-09-03@maxpreps-sync
-DTSTAMP:20260918T174144Z
+DTSTAMP:20260918T174702Z
 DTSTART:20260903T180000Z
 DTEND:20260903T230000Z
-SUMMARY:Concessions: VB MS 4:00pm / VB Varsity 5:00pm vs Bronson
-DESCRIPTION:VB MS: 4:00pm vs JV Opponent\nVB Varsity: 5:00pm vs Bronson\n\
- nEvent starts 120 min before first game. Source: MaxPreps (auto-synced).
+SUMMARY:VB 2 of 2 teams - 1st game 4:00pm - Bronson
+DESCRIPTION:VB 2 of 2 teams playing\n\nVB MS: 4:00pm vs JV Opponent\nVB Va
+ rsity: 5:00pm vs Bronson\n\nEvent starts 120 min before first game. Sourc
+ e: MaxPreps (auto-synced).
 LOCATION:First Christian\, 24530 NW 199th Ln\, High Springs\, FL 32643
 END:VEVENT
 BEGIN:VEVENT
 UID:concessions-2026-09-10@maxpreps-sync
-DTSTAMP:20260918T174144Z
+DTSTAMP:20260918T174702Z
 DTSTART:20260910T190000Z
 DTEND:20260910T230000Z
-SUMMARY:Concessions: VB Varsity 5:00pm vs NCA
-DESCRIPTION:VB Varsity: 5:00pm vs NCA\n\nEvent starts 120 min before first
-  game. Source: MaxPreps (auto-synced).
+SUMMARY:VB 1 of 2 teams - 1st game 5:00pm - NCA
+DESCRIPTION:VB 1 of 2 teams playing\n\nVB Varsity: 5:00pm vs NCA\n\nEvent 
+ starts 120 min before first game. Source: MaxPreps (auto-synced).
 LOCATION:First Christian\, 24530 NW 199th Ln\, High Springs\, FL 32643
 END:VEVENT
 BEGIN:VEVENT
 UID:concessions-2026-09-15@maxpreps-sync
-DTSTAMP:20260918T174144Z
+DTSTAMP:20260918T174702Z
 DTSTART:20260915T180000Z
 DTEND:20260915T230000Z
-SUMMARY:Concessions: VB MS 4:00pm / VB Varsity 5:00pm vs Countryside Chris
- tian
-DESCRIPTION:VB MS: 4:00pm vs Countryside Christian\nVB Varsity: 5:00pm vs 
- Countryside Christian\n\nEvent starts 120 min before first game. Source: 
- MaxPreps (auto-synced).
-LOCATION:First Christian\, 24530 NW 199th Ln\, High Springs\, FL 32643
-END:VEVENT
-BEGIN:VEVENT
-UID:concessions-2026-09-17@maxpreps-sync
-DTSTAMP:20260918T174144Z
-DTSTART:20260917T190000Z
-DTEND:20260918T000000Z
-SUMMARY:Concessions: VB MS 5:00pm / VB Varsity 6:00pm vs GCCHS
-DESCRIPTION:VB MS: 5:00pm vs GCCHS\nVB Varsity: 6:00pm vs GCCHS\n\nEvent s
- tarts 120 min before first game. Source: MaxPreps (auto-synced).
-LOCATION:First Christian\, 24530 NW 199th Ln\, High Springs\, FL 32643
-END:VEVENT
-BEGIN:VEVENT
-UID:concessions-2026-09-18@maxpreps-sync
-DTSTAMP:20260918T174144Z
-DTSTART:20260918T180000Z
-DTEND:20260918T230000Z
-SUMMARY:Concessions: VB MS 4:00pm / VB Varsity 5:00pm vs Corinth Christian
-  Academy
-DESCRIPTION:VB MS: 4:00pm vs Corinth Christian Academy\nVB Varsity: 5:00pm
-  vs Corinth Christian Academy\n\nEvent starts 120 min before first game. 
- Source: MaxPreps (auto-synced).
-LOCATION:First Christian\, 24530 NW 199th Ln\, High Springs\, FL 32643
-END:VEVENT
-BEGIN:VEVENT
-UID:concessions-2026-09-24@maxpreps-sync
-DTSTAMP:20260918T174144Z
-DTSTART:20260924T190000Z
-DTEND:20260924T230000Z
-SUMMARY:Concessions: VB Varsity 5:00pm vs Riverside Christian
-DESCRIPTION:VB Varsity: 5:00pm vs Riverside Christian\n\nEvent starts 120 
- min before first game. Source: MaxPreps (auto-synced).
-LOCATION:First Christian\, 24530 NW 199th Ln\, High Springs\, FL 32643
-END:VEVENT
-BEGIN:VEVENT
-UID:concessions-2026-09-29@maxpreps-sync
-DTSTAMP:20260918T174144Z
-DTSTART:20260929T180000Z
-DTEND:20260929T230000Z
-SUMMARY:Concessions: VB MS 4:00pm / VB Varsity 5:00pm vs Hart 2 Hart Acade
- my
-DESCRIPTION:VB MS: 4:00pm vs JV Opponent\nVB Varsity: 5:00pm vs Hart 2 Har
- t Academy\n\nEvent starts 120 min before first game. Source: MaxPreps (au
- to-synced).
-LOCATION:First Christian\, 24530 NW 199th Ln\, High Springs\, FL 32643
-END:VEVENT
-BEGIN:VEVENT
-UID:concessions-2026-11-02@maxpreps-sync
-DTSTAMP:20260918T174144Z
-DTSTART:20261102T193000Z
-DTEND:20261103T023000Z
-SUMMARY:Concessions: BB Boys MS 4:30pm / BB Girls MS 4:30pm / BB Girls V 6
- :30pm / BB Boys V 7:30pm vs NCA
-DESCRIPTION:BB Boys MS: 4:30pm vs NCA\nBB Girls MS: 4:30pm vs NCA\nBB Girl
- s V: 6:30pm vs NCA\nBB Boys V: 7:30pm vs NCA\n\nEvent starts 120 min befo
- re first game. Source: MaxPreps (auto-synced).
-LOCATION:First Christian\, 24530 NW 199th Ln\, High Springs\, FL 32643
-END:VEVENT
-BEGIN:VEVENT
-UID:concessions-2026-11-09@maxpreps-sync
-DTSTAMP:20260918T174144Z
-DTSTART:20261109T200000Z
-DTEND:20261110T023000Z
-SUMMARY:Concessions: BB Boys MS 5:00pm / BB Boys V 7:30pm vs Fort White\, 
- Varsity Opponent
-DESCRIPTION:BB Boys MS: 5:00pm vs Fort White\nBB Boys V: 7:30pm vs Varsity
-  Opponent\n\nEvent starts 120 min before first game. Source: MaxPreps (au
- to-synced).
-LOCATION:First Christian\, 24530 NW 199th Ln\, High Springs\, FL 32643
-END:VEVENT
-BEGIN:VEVENT
-UID:concessions-2026-11-12@maxpreps-sync
-DTSTAMP:20260918T174144Z
-DTSTART:20261112T190000Z
-DTEND:20261113T023000Z
-SUMMARY:Concessions: BB Girls MS 4:00pm / BB Boys MS 5:00pm / BB Girls V 6
- :00pm / BB Boys V 7:30pm vs Riverside Christian
-DESCRIPTION:BB Girls MS: 4:00pm vs Riverside Christian\nBB Boys MS: 5:00pm
-  vs Riverside Christian\nBB Girls V: 6:00pm vs Riverside Christian\nBB Bo
- ys V: 7:30pm vs Riverside Christian\n\nEvent starts 120 min before first 
- game. Source: MaxPreps (auto-synced).
-LOCATION:First Christian\, 24530 NW 199th Ln\, High Springs\, FL 32643
-END:VEVENT
-BEGIN:VEVENT
-UID:concessions-2026-11-19@maxpreps-sync
-DTSTAMP:20260918T174144Z
-DTSTART:20261119T190000Z
-DTEND:20261120T010000Z
-SUMMARY:Concessions: BB Girls MS 4:00pm / BB Boys MS 5:00pm / BB Girls V 6
- :00pm vs Interlachen\, Trinity Catholic
-DESCRIPTION:BB Girls MS: 4:00pm vs Interlachen\nBB Boys MS: 5:00pm vs Inte
- rlachen\nBB Girls V: 6:00pm vs Trinity Catholic\n\nEvent starts 120 min b
- efore first game. Source: MaxPreps (auto-synced).
-LOCATION:First Christian\, 24530 NW 199th Ln\, High Springs\, FL 32643
-END:VEVENT
-BEGIN:VEVENT
-UID:concessions-2026-11-20@maxpreps-sync
-DTSTAMP:20260918T174144Z
-DTSTART:20261120T200000Z
-DTEND:20261121T023000Z
-SUMMARY:Concessions: BB Boys MS 5:00pm / BB Boys V 7:30pm vs Cornerstone A
- cademy
-DESCRIPTION:BB Boys MS: 5:00pm vs Cornerstone Academy\nBB Boys V: 7:30pm v
- s Cornerstone Academy\n\nEvent starts 120 min before first game. Source: 
- MaxPreps (auto-synced).
-LOCATION:First Christian\, 24530 NW 199th Ln\, High Springs\, FL 32643
-END:VEVENT
-BEGIN:VEVENT
-UID:concessions-2026-12-08@maxpreps-sync
-DTSTAMP:20260918T174144Z
-DTSTART:20261208T190000Z
-DTEND:20261209T013000Z
-SUMMARY:Concessions: BB Girls MS 4:00pm / BB Girls V 6:30pm vs Fort White
-DESCRIPTION:BB Girls MS: 4:00pm vs JV Opponent\nBB Girls V: 6:30pm vs Fort
-  White\n\nEvent starts 120 min before first game. Source: MaxPreps (auto-
- synced).
-LOCATION:First Christian\, 24530 NW 199th Ln\, High Springs\, FL 32643
-END:VEVENT
-BEGIN:VEVENT
-UID:concessions-2026-12-11@maxpreps-sync
-DTSTAMP:20260918T174144Z
-DTSTART:20261211T190000Z
-DTEND:20261212T023000Z
-SUMMARY:Concessions: BB Girls MS 4:00pm / BB Boys MS 5:00pm / BB Girls V 6
- :00pm / BB Boys V 7:30pm vs Bell
-DESCRIPTION:BB Girls MS: 4:00pm vs Bell\nBB Boys MS: 5:00pm vs Bell\nBB Gi
- rls V: 6:00pm vs Bell\nBB Boys V: 7:30pm vs Bell\n\nEvent starts 120 min 
+SUMMARY:VB 2 of 2 teams - 1st game 4:00pm - Countryside Christian
+DESCRIPTION:VB 2 of 2 teams playing\n\nVB MS: 4:00pm vs Countryside Christ
+ ian\nVB Varsity: 5:00pm vs Countryside Christian\n\nEvent starts 120 min 
  before first game. Source: MaxPreps (auto-synced).
 LOCATION:First Christian\, 24530 NW 199th Ln\, High Springs\, FL 32643
 END:VEVENT
 BEGIN:VEVENT
+UID:concessions-2026-09-17@maxpreps-sync
+DTSTAMP:20260918T174702Z
+DTSTART:20260917T190000Z
+DTEND:20260918T000000Z
+SUMMARY:VB 2 of 2 teams - 1st game 5:00pm - GCCHS
+DESCRIPTION:VB 2 of 2 teams playing\n\nVB MS: 5:00pm vs GCCHS\nVB Varsity:
+  6:00pm vs GCCHS\n\nEvent starts 120 min before first game. Source: MaxPr
+ eps (auto-synced).
+LOCATION:First Christian\, 24530 NW 199th Ln\, High Springs\, FL 32643
+END:VEVENT
+BEGIN:VEVENT
+UID:concessions-2026-09-18@maxpreps-sync
+DTSTAMP:20260918T174702Z
+DTSTART:20260918T180000Z
+DTEND:20260918T230000Z
+SUMMARY:VB 2 of 2 teams - 1st game 4:00pm - Corinth Christian Academy
+DESCRIPTION:VB 2 of 2 teams playing\n\nVB MS: 4:00pm vs Corinth Christian 
+ Academy\nVB Varsity: 5:00pm vs Corinth Christian Academy\n\nEvent starts 
+ 120 min before first game. Source: MaxPreps (auto-synced).
+LOCATION:First Christian\, 24530 NW 199th Ln\, High Springs\, FL 32643
+END:VEVENT
+BEGIN:VEVENT
+UID:concessions-2026-09-24@maxpreps-sync
+DTSTAMP:20260918T174702Z
+DTSTART:20260924T190000Z
+DTEND:20260924T230000Z
+SUMMARY:VB 1 of 2 teams - 1st game 5:00pm - Riverside Christian
+DESCRIPTION:VB 1 of 2 teams playing\n\nVB Varsity: 5:00pm vs Riverside Chr
+ istian\n\nEvent starts 120 min before first game. Source: MaxPreps (auto-
+ synced).
+LOCATION:First Christian\, 24530 NW 199th Ln\, High Springs\, FL 32643
+END:VEVENT
+BEGIN:VEVENT
+UID:concessions-2026-09-29@maxpreps-sync
+DTSTAMP:20260918T174702Z
+DTSTART:20260929T180000Z
+DTEND:20260929T230000Z
+SUMMARY:VB 2 of 2 teams - 1st game 4:00pm - Hart 2 Hart Academy
+DESCRIPTION:VB 2 of 2 teams playing\n\nVB MS: 4:00pm vs JV Opponent\nVB Va
+ rsity: 5:00pm vs Hart 2 Hart Academy\n\nEvent starts 120 min before first
+  game. Source: MaxPreps (auto-synced).
+LOCATION:First Christian\, 24530 NW 199th Ln\, High Springs\, FL 32643
+END:VEVENT
+BEGIN:VEVENT
+UID:concessions-2026-11-02@maxpreps-sync
+DTSTAMP:20260918T174702Z
+DTSTART:20261102T193000Z
+DTEND:20261103T023000Z
+SUMMARY:BB 4 of 4 teams - 1st game 4:30pm - NCA
+DESCRIPTION:BB 4 of 4 teams playing\n\nBB Boys MS: 4:30pm vs NCA\nBB Girls
+  MS: 4:30pm vs NCA\nBB Girls V: 6:30pm vs NCA\nBB Boys V: 7:30pm vs NCA\n
+ \nEvent starts 120 min before first game. Source: MaxPreps (auto-synced).
+LOCATION:First Christian\, 24530 NW 199th Ln\, High Springs\, FL 32643
+END:VEVENT
+BEGIN:VEVENT
+UID:concessions-2026-11-09@maxpreps-sync
+DTSTAMP:20260918T174702Z
+DTSTART:20261109T200000Z
+DTEND:20261110T023000Z
+SUMMARY:BB 2 of 4 teams - 1st game 5:00pm - Fort White
+DESCRIPTION:BB 2 of 4 teams playing\n\nBB Boys MS: 5:00pm vs Fort White\nB
+ B Boys V: 7:30pm vs Varsity Opponent\n\nEvent starts 120 min before first
+  game. Source: MaxPreps (auto-synced).
+LOCATION:First Christian\, 24530 NW 199th Ln\, High Springs\, FL 32643
+END:VEVENT
+BEGIN:VEVENT
+UID:concessions-2026-11-12@maxpreps-sync
+DTSTAMP:20260918T174702Z
+DTSTART:20261112T190000Z
+DTEND:20261113T023000Z
+SUMMARY:BB 4 of 4 teams - 1st game 4:00pm - Riverside Christian
+DESCRIPTION:BB 4 of 4 teams playing\n\nBB Girls MS: 4:00pm vs Riverside Ch
+ ristian\nBB Boys MS: 5:00pm vs Riverside Christian\nBB Girls V: 6:00pm vs
+  Riverside Christian\nBB Boys V: 7:30pm vs Riverside Christian\n\nEvent s
+ tarts 120 min before first game. Source: MaxPreps (auto-synced).
+LOCATION:First Christian\, 24530 NW 199th Ln\, High Springs\, FL 32643
+END:VEVENT
+BEGIN:VEVENT
+UID:concessions-2026-11-19@maxpreps-sync
+DTSTAMP:20260918T174702Z
+DTSTART:20261119T190000Z
+DTEND:20261120T010000Z
+SUMMARY:BB 3 of 4 teams - 1st game 4:00pm - Interlachen/Trinity Catholic
+DESCRIPTION:BB 3 of 4 teams playing\n\nBB Girls MS: 4:00pm vs Interlachen\
+ nBB Boys MS: 5:00pm vs Interlachen\nBB Girls V: 6:00pm vs Trinity Catholi
+ c\n\nEvent starts 120 min before first game. Source: MaxPreps (auto-synce
+ d).
+LOCATION:First Christian\, 24530 NW 199th Ln\, High Springs\, FL 32643
+END:VEVENT
+BEGIN:VEVENT
+UID:concessions-2026-11-20@maxpreps-sync
+DTSTAMP:20260918T174702Z
+DTSTART:20261120T200000Z
+DTEND:20261121T023000Z
+SUMMARY:BB 2 of 4 teams - 1st game 5:00pm - Cornerstone Academy
+DESCRIPTION:BB 2 of 4 teams playing\n\nBB Boys MS: 5:00pm vs Cornerstone A
+ cademy\nBB Boys V: 7:30pm vs Cornerstone Academy\n\nEvent starts 120 min 
+ before first game. Source: MaxPreps (auto-synced).
+LOCATION:First Christian\, 24530 NW 199th Ln\, High Springs\, FL 32643
+END:VEVENT
+BEGIN:VEVENT
+UID:concessions-2026-12-08@maxpreps-sync
+DTSTAMP:20260918T174702Z
+DTSTART:20261208T190000Z
+DTEND:20261209T013000Z
+SUMMARY:BB 2 of 4 teams - 1st game 4:00pm - Fort White
+DESCRIPTION:BB 2 of 4 teams playing\n\nBB Girls MS: 4:00pm vs JV Opponent\
+ nBB Girls V: 6:30pm vs Fort White\n\nEvent starts 120 min before first ga
+ me. Source: MaxPreps (auto-synced).
+LOCATION:First Christian\, 24530 NW 199th Ln\, High Springs\, FL 32643
+END:VEVENT
+BEGIN:VEVENT
+UID:concessions-2026-12-11@maxpreps-sync
+DTSTAMP:20260918T174702Z
+DTSTART:20261211T190000Z
+DTEND:20261212T023000Z
+SUMMARY:BB 4 of 4 teams - 1st game 4:00pm - Bell
+DESCRIPTION:BB 4 of 4 teams playing\n\nBB Girls MS: 4:00pm vs Bell\nBB Boy
+ s MS: 5:00pm vs Bell\nBB Girls V: 6:00pm vs Bell\nBB Boys V: 7:30pm vs Be
+ ll\n\nEvent starts 120 min before first game. Source: MaxPreps (auto-sync
+ ed).
+LOCATION:First Christian\, 24530 NW 199th Ln\, High Springs\, FL 32643
+END:VEVENT
+BEGIN:VEVENT
 UID:concessions-2027-01-07@maxpreps-sync
-DTSTAMP:20260918T174144Z
+DTSTAMP:20260918T174702Z
 DTSTART:20270107T190000Z
 DTEND:20270108T003000Z
-SUMMARY:Concessions: BB Girls MS 4:00pm / BB Girls V 5:30pm vs Oak Hall\, 
- Redeemer Christian
-DESCRIPTION:BB Girls MS: 4:00pm vs Oak Hall\nBB Girls V: 5:30pm vs Redeeme
- r Christian\n\nEvent starts 120 min before first game. Source: MaxPreps (
- auto-synced).
+SUMMARY:BB 2 of 4 teams - 1st game 4:00pm - Oak Hall/Redeemer Christian
+DESCRIPTION:BB 2 of 4 teams playing\n\nBB Girls MS: 4:00pm vs Oak Hall\nBB
+  Girls V: 5:30pm vs Redeemer Christian\n\nEvent starts 120 min before fir
+ st game. Source: MaxPreps (auto-synced).
 LOCATION:First Christian\, 24530 NW 199th Ln\, High Springs\, FL 32643
 END:VEVENT
 BEGIN:VEVENT
 UID:concessions-2027-01-08@maxpreps-sync
-DTSTAMP:20260918T174144Z
+DTSTAMP:20260918T174702Z
 DTSTART:20270108T200000Z
 DTEND:20270109T013000Z
-SUMMARY:Concessions: BB Girls MS 5:00pm / BB Girls V 6:30pm vs The Village
- s Charter
-DESCRIPTION:BB Girls MS: 5:00pm vs The Villages Charter\nBB Girls V: 6:30p
- m vs The Villages Charter\n\nEvent starts 120 min before first game. Sour
- ce: MaxPreps (auto-synced).
-LOCATION:First Christian\, 24530 NW 199th Ln\, High Springs\, FL 32643
-END:VEVENT
-BEGIN:VEVENT
-UID:concessions-2027-01-11@maxpreps-sync
-DTSTAMP:20260918T174144Z
-DTSTART:20270111T190000Z
-DTEND:20270112T023000Z
-SUMMARY:Concessions: BB Girls MS 4:00pm / BB Boys MS 5:00pm / BB Girls V 6
- :00pm / BB Boys V 7:30pm vs Countryside Christian
-DESCRIPTION:BB Girls MS: 4:00pm vs Countryside Christian\nBB Boys MS: 5:00
- pm vs Countryside Christian\nBB Girls V: 6:00pm vs Countryside Christian\
- nBB Boys V: 7:30pm vs Countryside Christian\n\nEvent starts 120 min befor
- e first game. Source: MaxPreps (auto-synced).
-LOCATION:First Christian\, 24530 NW 199th Ln\, High Springs\, FL 32643
-END:VEVENT
-BEGIN:VEVENT
-UID:concessions-2027-01-19@maxpreps-sync
-DTSTAMP:20260918T174144Z
-DTSTART:20270119T200000Z
-DTEND:20270120T013000Z
-SUMMARY:Concessions: BB Boys MS 5:00pm / BB Boys V 6:30pm vs Westwood Chri
- stian
-DESCRIPTION:BB Boys MS: 5:00pm vs Westwood Christian\nBB Boys V: 6:30pm vs
-  Westwood Christian\n\nEvent starts 120 min before first game. Source: Ma
- xPreps (auto-synced).
-LOCATION:First Christian\, 24530 NW 199th Ln\, High Springs\, FL 32643
-END:VEVENT
-BEGIN:VEVENT
-UID:concessions-2027-01-21@maxpreps-sync
-DTSTAMP:20260918T174144Z
-DTSTART:20270121T210000Z
-DTEND:20270122T023000Z
-SUMMARY:Concessions: BB Girls V 6:00pm / BB Boys V 7:30pm vs Hart 2 Hart A
- cademy
-DESCRIPTION:BB Girls V: 6:00pm vs Hart 2 Hart Academy\nBB Boys V: 7:30pm v
- s Hart 2 Hart Academy\n\nEvent starts 120 min before first game. Source: 
- MaxPreps (auto-synced).
-LOCATION:First Christian\, 24530 NW 199th Ln\, High Springs\, FL 32643
-END:VEVENT
-BEGIN:VEVENT
-UID:concessions-2027-01-22@maxpreps-sync
-DTSTAMP:20260918T174144Z
-DTSTART:20270122T190000Z
-DTEND:20270123T023000Z
-SUMMARY:Concessions: BB Girls MS 4:00pm / BB Boys MS 5:00pm / BB Girls V 6
- :00pm / BB Boys V 7:30pm vs Open Bible Christian
-DESCRIPTION:BB Girls MS: 4:00pm vs Open Bible Christian\nBB Boys MS: 5:00p
- m vs Open Bible Christian\nBB Girls V: 6:00pm vs Open Bible Christian\nBB
-  Boys V: 7:30pm vs Open Bible Christian\n\nEvent starts 120 min before fi
- rst game. Source: MaxPreps (auto-synced).
-LOCATION:First Christian\, 24530 NW 199th Ln\, High Springs\, FL 32643
-END:VEVENT
-BEGIN:VEVENT
-UID:concessions-2027-02-02@maxpreps-sync
-DTSTAMP:20260918T174144Z
-DTSTART:20270202T200000Z
-DTEND:20270203T023000Z
-SUMMARY:Concessions: BB Boys MS 5:00pm / BB Girls V 6:00pm / BB Boys V 7:3
- 0pm vs Hope Christian Academy
-DESCRIPTION:BB Boys MS: 5:00pm vs Hope Christian Academy\nBB Girls V: 6:00
- pm vs Hope Christian Academy\nBB Boys V: 7:30pm vs Hope Christian Academy
- \n\nEvent starts 120 min before first game. Source: MaxPreps (auto-synced
- ).
-LOCATION:First Christian\, 24530 NW 199th Ln\, High Springs\, FL 32643
-END:VEVENT
-BEGIN:VEVENT
-UID:concessions-2027-02-04@maxpreps-sync
-DTSTAMP:20260918T174144Z
-DTSTART:20270204T190000Z
-DTEND:20270205T023000Z
-SUMMARY:Concessions: BB Girls MS 4:00pm / BB Boys MS 5:00pm / BB Girls V 6
- :00pm / BB Boys V 7:30pm vs GCCHS
-DESCRIPTION:BB Girls MS: 4:00pm vs GCCHS\nBB Boys MS: 5:00pm vs GCCHS\nBB 
- Girls V: 6:00pm vs GCCHS\nBB Boys V: 7:30pm vs GCCHS\n\nEvent starts 120 
+SUMMARY:BB 2 of 4 teams - 1st game 5:00pm - The Villages Charter
+DESCRIPTION:BB 2 of 4 teams playing\n\nBB Girls MS: 5:00pm vs The Villages
+  Charter\nBB Girls V: 6:30pm vs The Villages Charter\n\nEvent starts 120 
  min before first game. Source: MaxPreps (auto-synced).
 LOCATION:First Christian\, 24530 NW 199th Ln\, High Springs\, FL 32643
 END:VEVENT
 BEGIN:VEVENT
+UID:concessions-2027-01-11@maxpreps-sync
+DTSTAMP:20260918T174702Z
+DTSTART:20270111T190000Z
+DTEND:20270112T023000Z
+SUMMARY:BB 4 of 4 teams - 1st game 4:00pm - Countryside Christian
+DESCRIPTION:BB 4 of 4 teams playing\n\nBB Girls MS: 4:00pm vs Countryside 
+ Christian\nBB Boys MS: 5:00pm vs Countryside Christian\nBB Girls V: 6:00p
+ m vs Countryside Christian\nBB Boys V: 7:30pm vs Countryside Christian\n\
+ nEvent starts 120 min before first game. Source: MaxPreps (auto-synced).
+LOCATION:First Christian\, 24530 NW 199th Ln\, High Springs\, FL 32643
+END:VEVENT
+BEGIN:VEVENT
+UID:concessions-2027-01-19@maxpreps-sync
+DTSTAMP:20260918T174702Z
+DTSTART:20270119T200000Z
+DTEND:20270120T013000Z
+SUMMARY:BB 2 of 4 teams - 1st game 5:00pm - Westwood Christian
+DESCRIPTION:BB 2 of 4 teams playing\n\nBB Boys MS: 5:00pm vs Westwood Chri
+ stian\nBB Boys V: 6:30pm vs Westwood Christian\n\nEvent starts 120 min be
+ fore first game. Source: MaxPreps (auto-synced).
+LOCATION:First Christian\, 24530 NW 199th Ln\, High Springs\, FL 32643
+END:VEVENT
+BEGIN:VEVENT
+UID:concessions-2027-01-21@maxpreps-sync
+DTSTAMP:20260918T174702Z
+DTSTART:20270121T210000Z
+DTEND:20270122T023000Z
+SUMMARY:BB 2 of 4 teams - 1st game 6:00pm - Hart 2 Hart Academy
+DESCRIPTION:BB 2 of 4 teams playing\n\nBB Girls V: 6:00pm vs Hart 2 Hart A
+ cademy\nBB Boys V: 7:30pm vs Hart 2 Hart Academy\n\nEvent starts 120 min 
+ before first game. Source: MaxPreps (auto-synced).
+LOCATION:First Christian\, 24530 NW 199th Ln\, High Springs\, FL 32643
+END:VEVENT
+BEGIN:VEVENT
+UID:concessions-2027-01-22@maxpreps-sync
+DTSTAMP:20260918T174702Z
+DTSTART:20270122T190000Z
+DTEND:20270123T023000Z
+SUMMARY:BB 4 of 4 teams - 1st game 4:00pm - Open Bible Christian
+DESCRIPTION:BB 4 of 4 teams playing\n\nBB Girls MS: 4:00pm vs Open Bible C
+ hristian\nBB Boys MS: 5:00pm vs Open Bible Christian\nBB Girls V: 6:00pm 
+ vs Open Bible Christian\nBB Boys V: 7:30pm vs Open Bible Christian\n\nEve
+ nt starts 120 min before first game. Source: MaxPreps (auto-synced).
+LOCATION:First Christian\, 24530 NW 199th Ln\, High Springs\, FL 32643
+END:VEVENT
+BEGIN:VEVENT
+UID:concessions-2027-02-02@maxpreps-sync
+DTSTAMP:20260918T174702Z
+DTSTART:20270202T200000Z
+DTEND:20270203T023000Z
+SUMMARY:BB 3 of 4 teams - 1st game 5:00pm - Hope Christian Academy
+DESCRIPTION:BB 3 of 4 teams playing\n\nBB Boys MS: 5:00pm vs Hope Christia
+ n Academy\nBB Girls V: 6:00pm vs Hope Christian Academy\nBB Boys V: 7:30p
+ m vs Hope Christian Academy\n\nEvent starts 120 min before first game. So
+ urce: MaxPreps (auto-synced).
+LOCATION:First Christian\, 24530 NW 199th Ln\, High Springs\, FL 32643
+END:VEVENT
+BEGIN:VEVENT
+UID:concessions-2027-02-04@maxpreps-sync
+DTSTAMP:20260918T174702Z
+DTSTART:20270204T190000Z
+DTEND:20270205T023000Z
+SUMMARY:BB 4 of 4 teams - 1st game 4:00pm - GCCHS
+DESCRIPTION:BB 4 of 4 teams playing\n\nBB Girls MS: 4:00pm vs GCCHS\nBB Bo
+ ys MS: 5:00pm vs GCCHS\nBB Girls V: 6:00pm vs GCCHS\nBB Boys V: 7:30pm vs
+  GCCHS\n\nEvent starts 120 min before first game. Source: MaxPreps (auto-
+ synced).
+LOCATION:First Christian\, 24530 NW 199th Ln\, High Springs\, FL 32643
+END:VEVENT
+BEGIN:VEVENT
 UID:concessions-2027-02-05@maxpreps-sync
-DTSTAMP:20260918T174144Z
+DTSTAMP:20260918T174702Z
 DTSTART:20270205T200000Z
 DTEND:20270206T020000Z
-SUMMARY:Concessions: BB Boys MS 5:00pm / BB Girls V 6:00pm / BB Boys V 7:0
- 0pm vs Corinth Christian Academy
-DESCRIPTION:BB Boys MS: 5:00pm vs Corinth Christian Academy\nBB Girls V: 6
- :00pm vs Corinth Christian Academy\nBB Boys V: 7:00pm vs Corinth Christia
- n Academy\n\nEvent starts 120 min before first game. Source: MaxPreps (au
- to-synced).
+SUMMARY:BB 3 of 4 teams - 1st game 5:00pm - Corinth Christian Academy
+DESCRIPTION:BB 3 of 4 teams playing\n\nBB Boys MS: 5:00pm vs Corinth Chris
+ tian Academy\nBB Girls V: 6:00pm vs Corinth Christian Academy\nBB Boys V:
+  7:00pm vs Corinth Christian Academy\n\nEvent starts 120 min before first
+  game. Source: MaxPreps (auto-synced).
 LOCATION:First Christian\, 24530 NW 199th Ln\, High Springs\, FL 32643
 END:VEVENT
 END:VCALENDAR
