@@ -1,0 +1,247 @@
+{
+ "027a26b0-f68c-4625-ae86-c690b4b9ca4a": {
+  "date": "2026-09-03",
+  "home": true,
+  "opponent": "Bronson",
+  "team": "Varsity",
+  "time": "17:00"
+ },
+ "0aca20ec-54fc-498c-be94-dd04bc4ea596": {
+  "date": "2026-08-31",
+  "home": false,
+  "opponent": "Corinth Christian Academy",
+  "team": "Varsity",
+  "time": "17:00"
+ },
+ "11f88627-8a5c-4cff-a3d1-af83ad1d0afb": {
+  "date": "2026-08-13",
+  "home": false,
+  "opponent": "St Johns Christian School",
+  "team": "Varsity",
+  "time": "17:30"
+ },
+ "12fc2cce-3c3b-4b17-862c-11ae5b8f6c5c": {
+  "date": "2026-10-05",
+  "home": false,
+  "opponent": "JV Opponent",
+  "team": "MS",
+  "time": "16:00"
+ },
+ "1e398d21-4be6-4a9a-ac5b-2faf590b1625": {
+  "date": "2026-08-24",
+  "home": true,
+  "opponent": "Hope Christian Academy",
+  "team": "MS",
+  "time": "16:00"
+ },
+ "26f686a1-fa45-47a0-94e3-1a687b56603e": {
+  "date": "2026-09-10",
+  "home": true,
+  "opponent": "NCA",
+  "team": "Varsity",
+  "time": "17:00"
+ },
+ "3120f163-d18b-440f-88ff-0702f04d40e4": {
+  "date": "2026-09-17",
+  "home": true,
+  "opponent": "GCCHS",
+  "team": "MS",
+  "time": "17:00"
+ },
+ "37a379df-68dc-4cc1-b955-d63beb7af683": {
+  "date": "2026-08-18",
+  "home": true,
+  "opponent": "JV Opponent",
+  "team": "MS",
+  "time": "16:00"
+ },
+ "3b8d9700-add8-4b69-9f66-7282917806ea": {
+  "date": "2026-09-15",
+  "home": true,
+  "opponent": "Countryside Christian",
+  "team": "MS",
+  "time": "16:00"
+ },
+ "3bf02a5e-2350-43de-af1d-745d569dba0a": {
+  "date": "2026-08-28",
+  "home": false,
+  "opponent": "Countryside Christian",
+  "team": "MS",
+  "time": "17:00"
+ },
+ "41c1da4f-6343-488e-9c6a-6c7ada4431fb": {
+  "date": "2026-08-31",
+  "home": false,
+  "opponent": "Corinth Christian Academy",
+  "team": "MS",
+  "time": "16:00"
+ },
+ "4f40080b-3645-4d7d-805d-a27616eefc33": {
+  "date": "2026-09-17",
+  "home": true,
+  "opponent": "GCCHS",
+  "team": "Varsity",
+  "time": "18:00"
+ },
+ "5fbeba97-e395-45ca-b8da-4aca0c5dda9e": {
+  "date": "2026-09-11",
+  "home": false,
+  "opponent": "Westwood Christian",
+  "team": "MS",
+  "time": "16:30"
+ },
+ "7d7291af-0ee1-481c-86f5-aa2632020da2": {
+  "date": "2026-08-20",
+  "home": false,
+  "opponent": "Bronson",
+  "team": "MS",
+  "time": "16:00"
+ },
+ "7e2374fa-e5ca-48c0-b547-615e58791738": {
+  "date": "2026-09-03",
+  "home": true,
+  "opponent": "JV Opponent",
+  "team": "MS",
+  "time": "16:00"
+ },
+ "87db8ad4-7b09-49d0-8f8e-e521cd1bbb83": {
+  "date": "2026-09-29",
+  "home": true,
+  "opponent": "Hart 2 Hart Academy",
+  "team": "Varsity",
+  "time": "17:00"
+ },
+ "88b355d3-c86e-4665-b2e6-e4356283e08c": {
+  "date": "2026-09-01",
+  "home": true,
+  "opponent": "FACA",
+  "team": "MS",
+  "time": "16:30"
+ },
+ "9b0458ea-7d7c-4a5c-822f-b59c06efa799": {
+  "date": "2026-09-18",
+  "home": true,
+  "opponent": "Corinth Christian Academy",
+  "team": "Varsity",
+  "time": "17:00"
+ },
+ "9d1610e7-a05f-403b-93ff-7a32d84c89eb": {
+  "date": "2026-09-01",
+  "home": true,
+  "opponent": "FACA",
+  "team": "Varsity",
+  "time": "17:30"
+ },
+ "9da803b1-1c3e-45a3-95ce-a245a7ea2d55": {
+  "date": "2026-09-25",
+  "home": false,
+  "opponent": "FACA",
+  "team": "MS",
+  "time": "16:30"
+ },
+ "9df048fa-9ab4-4981-b474-a17b35988bd1": {
+  "date": "2026-09-29",
+  "home": true,
+  "opponent": "JV Opponent",
+  "team": "MS",
+  "time": "16:00"
+ },
+ "a1bfc23e-ab03-48dd-befc-383fe4d8a168": {
+  "date": "2026-08-20",
+  "home": false,
+  "opponent": "Bronson",
+  "team": "Varsity",
+  "time": "17:00"
+ },
+ "aac3b40f-86a7-4958-98fa-a00fc8e5e6d6": {
+  "date": "2026-08-24",
+  "home": true,
+  "opponent": "Hope Christian Academy",
+  "team": "Varsity",
+  "time": "17:00"
+ },
+ "acb4c0b2-7eab-4110-92a0-7c658459dfa8": {
+  "date": "2026-08-14",
+  "home": true,
+  "opponent": "Westwood Christian",
+  "team": "MS",
+  "time": "16:30"
+ },
+ "b374fd36-52ef-4a81-9e5e-028790e3591b": {
+  "date": "2026-09-22",
+  "home": false,
+  "opponent": "NCA",
+  "team": "Varsity",
+  "time": "16:30"
+ },
+ "bcab682b-f0b9-4053-9def-48c8125057a6": {
+  "date": "2026-08-28",
+  "home": false,
+  "opponent": "Countryside Christian",
+  "team": "Varsity",
+  "time": "18:00"
+ },
+ "bedb31c8-6cdd-4fa4-829e-4fcdf5881dcf": {
+  "date": "2026-09-15",
+  "home": true,
+  "opponent": "Countryside Christian",
+  "team": "Varsity",
+  "time": "17:00"
+ },
+ "c968b93e-3cc8-4f8e-bced-66c75c195e21": {
+  "date": "2026-09-28",
+  "home": false,
+  "opponent": "Hart 2 Hart Academy",
+  "team": "Varsity",
+  "time": "17:00"
+ },
+ "ce383888-d57d-4c44-8be2-443bd0d5790f": {
+  "date": "2026-09-18",
+  "home": true,
+  "opponent": "Corinth Christian Academy",
+  "team": "MS",
+  "time": "16:00"
+ },
+ "d13b4498-1349-4f2f-9ca5-ca133ecde979": {
+  "date": "2026-09-11",
+  "home": false,
+  "opponent": "Westwood Christian",
+  "team": "Varsity",
+  "time": "17:30"
+ },
+ "d6053fcb-e2e6-44a0-98a3-b47703d8f03a": {
+  "date": "2026-08-13",
+  "home": false,
+  "opponent": "St Johns Christian School",
+  "team": "MS",
+  "time": "16:30"
+ },
+ "d70f27a6-9687-418d-96aa-26527f7cdea7": {
+  "date": "2026-09-25",
+  "home": false,
+  "opponent": "FACA",
+  "team": "Varsity",
+  "time": "17:30"
+ },
+ "db06d90a-d9c3-48dc-9e5a-6a675f61cf33": {
+  "date": "2026-09-24",
+  "home": true,
+  "opponent": "Riverside Christian",
+  "team": "Varsity",
+  "time": "17:00"
+ },
+ "efd552b2-a1b0-4db2-b9d3-0156aa68cbdd": {
+  "date": "2026-08-21",
+  "home": true,
+  "opponent": "Westwood Christian",
+  "team": "Varsity",
+  "time": "16:45"
+ },
+ "f151f726-e410-4173-b3fc-d620d82a4b49": {
+  "date": "2026-08-14",
+  "home": true,
+  "opponent": "Westwood Christian",
+  "team": "Varsity",
+  "time": "17:30"
+ }
+}
