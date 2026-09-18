@@ -536,7 +536,7 @@
   "home": true,
   "opponent": "Corinth Christian Academy",
   "team": "VB Varsity",
-  "time": "17:00"
+  "time": null
  },
  "9b06eed3-1579-41b1-a10e-3776710f6181": {
   "date": "2027-01-15",
@@ -739,7 +739,7 @@
   "home": true,
   "opponent": "Corinth Christian Academy",
   "team": "VB MS",
-  "time": null
+  "time": "16:00"
  },
  "ce6accc0-e5a5-487f-a5c6-1b5e09beab07": {
   "date": "2027-02-02",
