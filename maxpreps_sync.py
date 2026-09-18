@@ -27,7 +27,7 @@ TEAMS = {
     "MS":      "https://www.maxpreps.com/fl/high-springs/first-christian-lions/volleyball/jv/schedule/",
 }
 SPORT = "Volleyball"
-LEAD_MINUTES = 90          # how long before the FIRST game she needs to be there
+LEAD_MINUTES = 120          # how long before the FIRST game she needs to be there
 TAIL_MINUTES = 120         # event ends this long after the LAST game's start time
 INCLUDE_AWAY = False       # away games never go on the calendar, but changes to them are ignored too
 HOME_LOCATION = "First Christian, 24530 NW 199th Ln, High Springs, FL 32643"
