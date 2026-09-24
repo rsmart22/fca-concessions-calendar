@@ -17,11 +17,13 @@ jobs:
         env:
           NOTIFY_WEBHOOK: ${{ secrets.NOTIFY_WEBHOOK }}
       - name: Commit if changed
+        if: always()
         run: |
           git config user.name "schedule-bot"
           git config user.email "bot@users.noreply.github.com"
           git add docs/concessions.ics state.json
-          if [ -n "$(git diff --cached -I'^DTSTAMP' -- docs/concessions.ics state.json)" ]; then
+          git add failures.json 2>/dev/null || true
+          if [ -n "$(git diff --cached -I'^DTSTAMP')" ]; then
             git commit -m "Schedule update"
             git push
           else
