@@ -12,7 +12,7 @@ Env:
     NOTIFY_WEBHOOK  optional URL; changes are POSTed as JSON {"title","message"}
                     (e.g. a Home Assistant webhook automation)
 """
-import json, os, re, sys
+import json, os, re, sys, time
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from zoneinfo import ZoneInfo
@@ -38,6 +38,8 @@ HOME_LOCATION = "First Christian, 24530 NW 199th Ln, High Springs, FL 32643"
 TZ = ZoneInfo("America/New_York")
 OUT_ICS = Path("docs/concessions.ics")
 STATE = Path("state.json")
+FAILS = Path("failures.json")   # consecutive failed runs; alert only after ALERT_AFTER of them
+ALERT_AFTER = 3
 # -----------------------------------------------------------------------
 
 # contest links look like .../volleyball/match/<slug>/9-18-2026/?c=<id> or .../basketball/game/<slug>/jv/11-2-2026/?c=<id>
@@ -99,13 +101,32 @@ def parse_schedule(html, team):
     return games
 
 
+def get_with_retry(url, attempts=3, wait=30):
+    """MaxPreps sometimes answers 403 'Geo-block' to a GitHub runner in an unlucky region.
+    Retry a few times before calling it a failure."""
+    last = None
+    for i in range(attempts):
+        try:
+            r = requests.get(url, headers=HEADERS, timeout=30)
+            if r.status_code in (403, 429) or r.status_code >= 500:
+                last = RuntimeError(f"HTTP {r.status_code} {r.reason} for {url}")
+            else:
+                return r
+        except requests.RequestException as ex:
+            last = ex
+        if i < attempts - 1:
+            print(f"attempt {i + 1} failed ({last}); retrying in {wait}s")
+            time.sleep(wait)
+    raise last
+
+
 def fetch_all(old, today):
     """old = last run's games. A team that HAD upcoming games and now shows none is an error
     (blocked / layout change). A team we've never seen with no games just isn't posted yet."""
     had_upcoming = {g["team"] for g in old.values() if g["date"] >= today}
     allgames = {}
     for team, url in TEAMS:
-        r = requests.get(url, headers=HEADERS, timeout=30)
+        r = get_with_retry(url)
         if r.status_code == 404 and team not in had_upcoming:
             print(f"WARNING: {team}: page not found (404) - check the URL, or schedule not created yet")
             continue
@@ -238,9 +259,14 @@ def main():
         if not games:
             raise RuntimeError("No games found on any page")
     except Exception as ex:
-        if not dry:
-            notify("Concession schedule sync FAILED", str(ex))
         print(f"ERROR: {ex}", file=sys.stderr)
+        if not dry:
+            n = (json.loads(FAILS.read_text())["count"] if FAILS.exists() else 0) + 1
+            FAILS.write_text(json.dumps({"count": n, "last_error": str(ex)}))
+            if n == ALERT_AFTER or (n > ALERT_AFTER and n % 24 == 0):
+                notify("Concession schedule sync FAILED",
+                       f"{n} hourly checks in a row have failed. Calendar is frozen at the last good "
+                       f"schedule - check MaxPreps by hand.\nLast error: {ex}")
         sys.exit(1)
     if dry:
         for g in sorted(games.values(), key=lambda g: (g["date"], g["time"] or "")):
@@ -250,6 +276,11 @@ def main():
     OUT_ICS.parent.mkdir(parents=True, exist_ok=True)
     OUT_ICS.write_text(build_ics(games), newline="")
     STATE.write_text(json.dumps(games, indent=1, sort_keys=True))
+    if FAILS.exists():
+        n = json.loads(FAILS.read_text())["count"]
+        FAILS.unlink()
+        if n >= ALERT_AFTER:
+            notify("Concession schedule sync recovered", f"Back to normal after {n} failed checks.")
     if changes:
         notify("Concessions schedule changed", "\n".join(changes))
     else:
