@@ -111,13 +111,6 @@
   "team": "BB Boys V",
   "time": "19:30"
  },
- "1d927b25-9135-4dbf-9f26-1f4ee1f9203b": {
-  "date": "2026-11-19",
-  "home": true,
-  "opponent": "Interlachen",
-  "team": "BB Boys MS",
-  "time": "17:00"
- },
  "1e398d21-4be6-4a9a-ac5b-2faf590b1625": {
   "date": "2026-08-24",
   "home": true,
@@ -278,13 +271,6 @@
   "opponent": "Hope Christian Academy",
   "team": "BB Girls MS",
   "time": "16:00"
- },
- "442235f3-3692-40a1-af3b-4ad14a4e1225": {
-  "date": "2026-12-14",
-  "home": false,
-  "opponent": "Interlachen",
-  "team": "BB Boys MS",
-  "time": "18:00"
  },
  "48869ca9-eb42-4180-84bd-09c0e5ef3bbc": {
   "date": "2026-11-20",
@@ -571,7 +557,7 @@
   "home": true,
   "opponent": "JV Opponent",
   "team": "VB MS",
-  "time": "16:00"
+  "time": null
  },
  "9ffc7fb9-fb75-415f-aee8-65290f5f2119": {
   "date": "2026-12-17",
