@@ -62,6 +62,13 @@
   "team": "VB Varsity",
   "time": "17:30"
  },
+ "12fc2cce-3c3b-4b17-862c-11ae5b8f6c5c": {
+  "date": "2026-10-05",
+  "home": false,
+  "opponent": "JV Opponent",
+  "team": "VB MS",
+  "time": "16:00"
+ },
  "1560593f-fe21-44cc-97b2-5d934735f55a": {
   "date": "2026-12-15",
   "home": false,
@@ -96,6 +103,13 @@
   "opponent": "Interlachen",
   "team": "BB Girls MS",
   "time": "16:00"
+ },
+ "1c436f1b-315c-4ea5-9397-d1d2165c3811": {
+  "date": "2026-11-09",
+  "home": true,
+  "opponent": "Varsity Opponent",
+  "team": "BB Boys V",
+  "time": "19:30"
  },
  "1e398d21-4be6-4a9a-ac5b-2faf590b1625": {
   "date": "2026-08-24",
@@ -202,6 +216,13 @@
   "team": "BB Boys V",
   "time": "18:30"
  },
+ "37a379df-68dc-4cc1-b955-d63beb7af683": {
+  "date": "2026-08-18",
+  "home": true,
+  "opponent": "JV Opponent",
+  "team": "VB MS",
+  "time": "16:00"
+ },
  "39fe38e1-ce0a-41e8-8149-b52868e6db09": {
   "date": "2026-12-07",
   "home": false,
@@ -250,6 +271,13 @@
   "opponent": "Hope Christian Academy",
   "team": "BB Girls MS",
   "time": "16:00"
+ },
+ "48869ca9-eb42-4180-84bd-09c0e5ef3bbc": {
+  "date": "2026-11-20",
+  "home": false,
+  "opponent": "JV Opponent",
+  "team": "BB Girls MS",
+  "time": "17:00"
  },
  "48e44d35-217c-4310-9a28-5a2067569aac": {
   "date": "2027-01-22",
@@ -384,6 +412,13 @@
   "team": "VB MS",
   "time": "16:00"
  },
+ "7e2374fa-e5ca-48c0-b547-615e58791738": {
+  "date": "2026-09-03",
+  "home": true,
+  "opponent": "JV Opponent",
+  "team": "VB MS",
+  "time": "16:00"
+ },
  "803831d7-bb08-4217-af56-0d4e284ed594": {
   "date": "2026-11-16",
   "home": false,
@@ -425,6 +460,13 @@
   "opponent": "Bell",
   "team": "BB Boys V",
   "time": "19:30"
+ },
+ "8ea36553-d458-422c-a418-4c775ba0ec6c": {
+  "date": "2026-12-08",
+  "home": true,
+  "opponent": "JV Opponent",
+  "team": "BB Girls MS",
+  "time": "16:00"
  },
  "9181db9d-4bfd-4794-8cba-632725fb031b": {
   "date": "2026-11-20",
@@ -508,6 +550,13 @@
   "home": true,
   "opponent": "GCCHS",
   "team": "BB Girls MS",
+  "time": "16:00"
+ },
+ "9df048fa-9ab4-4981-b474-a17b35988bd1": {
+  "date": "2026-09-29",
+  "home": true,
+  "opponent": "JV Opponent",
+  "team": "VB MS",
   "time": "16:00"
  },
  "9ffc7fb9-fb75-415f-aee8-65290f5f2119": {
