@@ -153,13 +153,6 @@
   "team": "VB Varsity",
   "time": "17:00"
  },
- "2afa46ea-9f9b-4608-96f4-71eb8bb1574c": {
-  "date": "2027-02-02",
-  "home": false,
-  "opponent": "Hope Christian Academy",
-  "team": "BB Girls MS",
-  "time": "16:00"
- },
  "2b0caf1a-db50-449b-a27d-8469735e64e4": {
   "date": "2027-01-22",
   "home": true,
@@ -489,13 +482,6 @@
   "team": "BB Girls V",
   "time": "18:00"
  },
- "94e8c7f1-b7dd-4863-a781-233df31990cf": {
-  "date": "2027-02-02",
-  "home": true,
-  "opponent": "Hope Christian Academy",
-  "team": "BB Girls V",
-  "time": "18:00"
- },
  "980cd6eb-bb9b-4eea-b907-69268abfe96a": {
   "date": "2026-12-07",
   "home": false,
@@ -727,13 +713,6 @@
   "team": "VB MS",
   "time": "16:00"
  },
- "ce6accc0-e5a5-487f-a5c6-1b5e09beab07": {
-  "date": "2027-02-02",
-  "home": true,
-  "opponent": "Hope Christian Academy",
-  "team": "BB Boys MS",
-  "time": "17:00"
- },
  "d13b4498-1349-4f2f-9ca5-ca133ecde979": {
   "date": "2026-09-11",
   "home": false,
@@ -747,13 +726,6 @@
   "opponent": "Fort White",
   "team": "VB Varsity",
   "time": "17:00"
- },
- "d2dfcf02-8791-4191-b177-b865853b7ed7": {
-  "date": "2027-02-02",
-  "home": true,
-  "opponent": "Hope Christian Academy",
-  "team": "BB Boys V",
-  "time": "19:30"
  },
  "d6053fcb-e2e6-44a0-98a3-b47703d8f03a": {
   "date": "2026-08-13",
