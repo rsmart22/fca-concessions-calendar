@@ -20,13 +20,6 @@
   "team": "BB Girls V",
   "time": "17:30"
  },
- "096f0201-f1de-40e0-bebc-1c1338e07e10": {
-  "date": "2027-01-11",
-  "home": true,
-  "opponent": "Countryside Christian",
-  "team": "BB Girls MS",
-  "time": "16:00"
- },
  "0aca20ec-54fc-498c-be94-dd04bc4ea596": {
   "date": "2026-08-31",
   "home": false,
@@ -510,13 +503,6 @@
   "team": "BB Boys V",
   "time": "19:30"
  },
- "9948bef6-29ee-4d6b-89a8-026487778617": {
-  "date": "2027-01-11",
-  "home": true,
-  "opponent": "Countryside Christian",
-  "team": "BB Boys V",
-  "time": "19:30"
- },
  "99720e89-f071-499c-88f5-27344a55447f": {
   "date": "2026-12-15",
   "home": false,
@@ -783,13 +769,6 @@
   "team": "VB Varsity",
   "time": "17:30"
  },
- "d86dd1c2-f72c-4762-9b25-38beaacb3848": {
-  "date": "2027-01-11",
-  "home": true,
-  "opponent": "Countryside Christian",
-  "team": "BB Girls V",
-  "time": "18:00"
- },
  "d882354c-efaa-4026-9d0e-8d51f266b464": {
   "date": "2026-11-02",
   "home": true,
@@ -815,13 +794,6 @@
   "date": "2027-01-25",
   "home": false,
   "opponent": "Bell",
-  "team": "BB Boys MS",
-  "time": "17:00"
- },
- "dfc61163-54fc-433a-a7a1-1c5271de0199": {
-  "date": "2027-01-11",
-  "home": true,
-  "opponent": "Countryside Christian",
   "team": "BB Boys MS",
   "time": "17:00"
  },
