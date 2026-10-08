@@ -13,13 +13,6 @@
   "team": "VB Varsity",
   "time": "17:00"
  },
- "06db878b-4ad5-43b7-b5c5-69dc3d7f2b3e": {
-  "date": "2027-01-07",
-  "home": true,
-  "opponent": "Redeemer Christian",
-  "team": "BB Girls V",
-  "time": "17:30"
- },
  "0aca20ec-54fc-498c-be94-dd04bc4ea596": {
   "date": "2026-08-31",
   "home": false,
@@ -230,13 +223,6 @@
   "team": "VB MS",
   "time": "17:00"
  },
- "3c21abdc-a77b-46a9-b775-a79faf75d526": {
-  "date": "2027-01-08",
-  "home": true,
-  "opponent": "The Villages Charter",
-  "team": "BB Girls MS",
-  "time": "17:00"
- },
  "40489ebc-ba97-487c-b4c8-267f7ddc1fe0": {
   "date": "2027-02-05",
   "home": true,
@@ -376,13 +362,6 @@
   "opponent": "Hart 2 Hart Academy",
   "team": "BB Boys V",
   "time": "19:30"
- },
- "78bd7ffa-dc9f-4ce8-9c4d-3afc1485b4e7": {
-  "date": "2027-01-08",
-  "home": true,
-  "opponent": "The Villages Charter",
-  "team": "BB Girls V",
-  "time": "18:30"
  },
  "7bd03d12-25a1-42c9-a030-8317cac69612": {
   "date": "2026-12-08",
