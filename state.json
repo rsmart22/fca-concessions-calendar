@@ -405,6 +405,13 @@
   "team": "BB Boys V",
   "time": "18:00"
  },
+ "8608d585-df07-445a-8195-7309d9d9fcc6": {
+  "date": "2026-10-09",
+  "home": true,
+  "opponent": "Westwood Christian",
+  "team": "VB MS",
+  "time": "16:24"
+ },
  "87db8ad4-7b09-49d0-8f8e-e521cd1bbb83": {
   "date": "2026-09-29",
   "home": true,
@@ -830,7 +837,7 @@
   "home": true,
   "opponent": "GCCHS",
   "team": "VB MS",
-  "time": null
+  "time": "16:30"
  },
  "efd552b2-a1b0-4db2-b9d3-0156aa68cbdd": {
   "date": "2026-08-21",
