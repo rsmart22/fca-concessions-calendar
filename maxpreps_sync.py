@@ -150,6 +150,15 @@ def fmt12(t):
     return datetime.strptime(t, "%H:%M").strftime("%-I:%M%p").lower()
 
 
+# Replacement for the diff() function in maxpreps_sync.py
+# (rsmart22/fca-concessions-calendar)
+#
+# Change: same-day time changes to/from TBA are ignored. MaxPreps blanks a
+# game's time while it is being played and restores it afterward, which used
+# to fire two useless "schedule changed" pushes on every game day.
+# Everything else (new games, moved times, future-game TBAs, removals,
+# home/away flips) alerts exactly as before.
+
 def diff(old, new, today):
     msgs = []
     known_teams = {g["team"] for g in old.values()}
@@ -170,7 +179,12 @@ def diff(old, new, today):
         if o["date"] != n["date"]:
             bits.append(f"date {o['date']} -> {n['date']}")
         if o["time"] != n["time"]:
-            bits.append(f"time {fmt12(o['time'])} -> {fmt12(n['time'])}")
+            # MaxPreps blanks the time to TBA while a game is live and puts it
+            # back when it ends. A same-day change to/from TBA is that flap,
+            # not a schedule change - we're already at the game. Skip it.
+            live_flap = n["date"] == today and (o["time"] is None or n["time"] is None)
+            if not live_flap:
+                bits.append(f"time {fmt12(o['time'])} -> {fmt12(n['time'])}")
         if o["home"] != n["home"]:
             bits.append("now HOME" if n["home"] else "now AWAY")
         if bits:
@@ -179,7 +193,6 @@ def diff(old, new, today):
         if cid not in new and o["date"] >= today and (o["home"] or INCLUDE_AWAY):
             msgs.append(f"REMOVED: {o['team']} vs {o['opponent']} {o['date']} {fmt12(o['time'])}")
     return msgs
-
 
 def esc(s):
     return s.replace("\\", "\\\\").replace(";", "\\;").replace(",", "\\,").replace("\n", "\\n")
