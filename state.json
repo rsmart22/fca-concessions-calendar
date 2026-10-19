@@ -118,13 +118,6 @@
   "team": "BB Boys MS",
   "time": "17:00"
  },
- "1f8ae868-45ea-4ff2-800e-b5a5f045f4ad": {
-  "date": "2026-11-06",
-  "home": false,
-  "opponent": "St Johns Christian School",
-  "team": "BB Girls MS",
-  "time": "16:00"
- },
  "1fb9d4e8-aa10-40e1-8ced-5d1b76eddc34": {
   "date": "2027-02-04",
   "home": true,
@@ -403,7 +396,7 @@
   "home": false,
   "opponent": "St Johns Christian School",
   "team": "BB Boys V",
-  "time": "19:30"
+  "time": "19:00"
  },
  "7d7291af-0ee1-481c-86f5-aa2632020da2": {
   "date": "2026-08-20",
@@ -802,7 +795,7 @@
   "home": false,
   "opponent": "St Johns Christian School",
   "team": "BB Boys MS",
-  "time": "17:00"
+  "time": "16:30"
  },
  "e586dc0a-ef26-4458-867c-5df30e812c6d": {
   "date": "2026-12-17",
