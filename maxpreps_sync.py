@@ -68,7 +68,11 @@ def clean_opponent(text):
 def parse_schedule(html, team):
     soup = BeautifulSoup(html, "html.parser")
     games = {}
-    for a in soup.find_all("a", href=MATCH_RE):
+    links = soup.find_all("a", href=MATCH_RE)
+    # MaxPreps adds "Last Match" / "Next Match" boxes above the table that link to the same games
+    # without a vs/@ - only read links that sit inside a schedule table row
+    in_rows = [a for a in links if a.find_parent("tr")]
+    for a in (in_rows or links):
         m = MATCH_RE.search(a["href"])
         mo, d, y, cid = int(m[1]), int(m[2]), int(m[3]), m[4].lower()
         if cid in games:
@@ -137,9 +141,10 @@ def fetch_all(old, today):
                 raise RuntimeError(f"Parsed 0 games for {team} - page layout changed or request was blocked")
             print(f"WARNING: {team}: no games posted yet")
             continue
-        unknown = [c for c, v in g.items() if v["home"] is None]
-        if unknown:
-            raise RuntimeError(f"{team}: could not tell home/away for {len(unknown)} games - parser needs a look")
+        for c, v in g.items():
+            if v["home"] is None:
+                print(f"WARNING: {team}: home/away unknown for {v['date']} vs {v['opponent']} - shown on calendar flagged")
+                v["opponent"] += " (CHECK MAXPREPS - home/away unknown)"
         allgames.update(g)
     return allgames
 
@@ -169,10 +174,10 @@ def diff(old, new, today):
         if o is None:
             if n["team"] not in known_teams:
                 continue  # whole team was just added - don't alert for every game
-            if n["home"] or INCLUDE_AWAY:
-                msgs.append(f"NEW: {n['team']} {'vs' if n['home'] else '@'} {n['opponent']} {n['date']} {fmt12(n['time'])}")
+            if n["home"] or n["home"] is None or INCLUDE_AWAY:
+                msgs.append(f"NEW: {n['team']} {'@' if n['home'] is False else 'vs'} {n['opponent']} {n['date']} {fmt12(n['time'])}")
             continue
-        watched = n["home"] or o["home"] or INCLUDE_AWAY
+        watched = n["home"] or o["home"] or n["home"] is None or o["home"] is None or INCLUDE_AWAY
         if not watched:
             continue
         bits = []
@@ -201,7 +206,7 @@ def esc(s):
 def build_ics(games):
     days = {}
     for g in games.values():
-        if g["home"]:
+        if g["home"] or g["home"] is None:
             days.setdefault(g["date"], []).append(g)
     now = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
     out = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//maxpreps-concessions//EN",
