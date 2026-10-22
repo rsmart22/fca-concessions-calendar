@@ -172,7 +172,7 @@
   "home": true,
   "opponent": "Riverside Christian",
   "team": "BB Boys V",
-  "time": "19:30"
+  "time": "18:00"
  },
  "3120f163-d18b-440f-88ff-0702f04d40e4": {
   "date": "2026-09-17",
@@ -375,7 +375,7 @@
   "home": false,
   "opponent": "Riverside Christian",
   "team": "BB Boys V",
-  "time": "19:30"
+  "time": "18:00"
  },
  "75344a89-c65d-4297-ada9-a34023b0c88b": {
   "date": "2027-01-21",
@@ -601,13 +601,6 @@
   "team": "BB Girls MS",
   "time": "16:00"
  },
- "acb49cb0-e805-44b2-94c5-9dcc2a106323": {
-  "date": "2027-01-28",
-  "home": false,
-  "opponent": "Riverside Christian",
-  "team": "BB Girls V",
-  "time": "18:00"
- },
  "acb4c0b2-7eab-4110-92a0-7c658459dfa8": {
   "date": "2026-08-14",
   "home": true,
@@ -677,13 +670,6 @@
   "opponent": "GCCHS",
   "team": "BB Boys V",
   "time": "19:30"
- },
- "c10589b4-3a54-4b5c-9102-1d926819e525": {
-  "date": "2026-11-12",
-  "home": true,
-  "opponent": "Riverside Christian",
-  "team": "BB Girls V",
-  "time": "18:00"
  },
  "c5307aa0-f5e0-46b6-a991-3734bdb56489": {
   "date": "2027-01-25",
