@@ -235,7 +235,7 @@ def append_change_log(recs, when=None):
     LOG_CSV.parent.mkdir(parents=True, exist_ok=True)
     new_file = not LOG_CSV.exists()
     with LOG_CSV.open("a", newline="") as f:
-        w = csv.writer(f)
+        w = csv.writer(f, lineterminator="\n")
         if new_file:
             w.writerow(LOG_COLS)
         for r in recs:
