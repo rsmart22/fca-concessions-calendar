@@ -164,9 +164,13 @@ def fmt12(t):
 # Everything else (new games, moved times, future-game TBAs, removals,
 # home/away flips) alerts exactly as before.
 
-def diff(old, new, today):
-    msgs = []
+def diff_records(old, new, today):
+    """Structured list of schedule changes between two runs. Each record has:
+    type (NEW/CHANGED/REMOVED), team, date, opponent, home, old_time, new_time, old_date, new_date, note.
+    Away-only changes are ignored unless INCLUDE_AWAY."""
+    recs = []
     known_teams = {g["team"] for g in old.values()}
+    ha = lambda g: "HOME" if g["home"] else ("?" if g["home"] is None else "AWAY")
     for cid, n in new.items():
         o = old.get(cid)
         if n["date"] < today:
@@ -175,7 +179,8 @@ def diff(old, new, today):
             if n["team"] not in known_teams:
                 continue  # whole team was just added - don't alert for every game
             if n["home"] or n["home"] is None or INCLUDE_AWAY:
-                msgs.append(f"NEW: {n['team']} {'@' if n['home'] is False else 'vs'} {n['opponent']} {n['date']} {fmt12(n['time'])}")
+                recs.append(dict(type="NEW", team=n["team"], date=n["date"], opponent=n["opponent"], home=ha(n),
+                                 old_time="", new_time=fmt12(n["time"]), old_date="", new_date=n["date"], note="game added"))
             continue
         watched = n["home"] or o["home"] or n["home"] is None or o["home"] is None or INCLUDE_AWAY
         if not watched:
@@ -193,11 +198,90 @@ def diff(old, new, today):
         if o["home"] != n["home"]:
             bits.append("now HOME" if n["home"] else "now AWAY")
         if bits:
-            msgs.append(f"CHANGED: {n['team']} vs {n['opponent']} ({n['date']}): " + ", ".join(bits))
+            recs.append(dict(type="CHANGED", team=n["team"], date=n["date"], opponent=n["opponent"], home=ha(n),
+                             old_time=fmt12(o["time"]), new_time=fmt12(n["time"]), old_date=o["date"], new_date=n["date"],
+                             note=", ".join(bits)))
     for cid, o in old.items():
         if cid not in new and o["date"] >= today and (o["home"] or INCLUDE_AWAY):
-            msgs.append(f"REMOVED: {o['team']} vs {o['opponent']} {o['date']} {fmt12(o['time'])}")
+            recs.append(dict(type="REMOVED", team=o["team"], date=o["date"], opponent=o["opponent"], home=ha(o),
+                             old_time=fmt12(o["time"]), new_time="", old_date=o["date"], new_date="", note="game removed"))
+    return recs
+
+
+def diff(old, new, today):
+    """Human-readable change lines (what the phone alert says)."""
+    msgs = []
+    for r in diff_records(old, new, today):
+        if r["type"] == "NEW":
+            msgs.append(f"NEW: {r['team']} {'@' if r['home'] == 'AWAY' else 'vs'} {r['opponent']} {r['date']} {r['new_time']}")
+        elif r["type"] == "CHANGED":
+            msgs.append(f"CHANGED: {r['team']} vs {r['opponent']} ({r['date']}): {r['note']}")
+        else:
+            msgs.append(f"REMOVED: {r['team']} vs {r['opponent']} {r['date']} {r['old_time']}")
     return msgs
+
+
+# ----------------------------- change log -----------------------------
+LOG_CSV = Path("docs/changes.csv")
+LOG_HTML = Path("docs/changes.html")
+LOG_COLS = ["detected", "type", "team", "game_date", "opponent", "home_away", "old_time", "new_time",
+            "old_date", "new_date", "detail"]
+
+
+def append_change_log(recs, when=None):
+    """Append change records to docs/changes.csv (one row each) and rebuild docs/changes.html."""
+    import csv
+    when = when or datetime.now(TZ).strftime("%Y-%m-%d %H:%M")
+    LOG_CSV.parent.mkdir(parents=True, exist_ok=True)
+    new_file = not LOG_CSV.exists()
+    with LOG_CSV.open("a", newline="") as f:
+        w = csv.writer(f)
+        if new_file:
+            w.writerow(LOG_COLS)
+        for r in recs:
+            w.writerow([when, r["type"], r["team"], r["date"], r["opponent"], r["home"], r["old_time"],
+                        r["new_time"], r["old_date"], r["new_date"], r["note"]])
+    build_change_page()
+
+
+def build_change_page():
+    import csv, html
+    rows = []
+    if LOG_CSV.exists():
+        with LOG_CSV.open(newline="") as f:
+            rows = list(csv.DictReader(f))
+    rows.reverse()  # newest first
+    def day(d):
+        try:
+            return datetime.strptime(d, "%Y-%m-%d").strftime("%a %-m/%-d/%y")
+        except Exception:
+            return d
+    body = []
+    for r in rows:
+        cls = {"NEW": "new", "CHANGED": "chg", "REMOVED": "rem"}.get(r["type"], "")
+        if r["type"] == "CHANGED":
+            what = r["detail"]
+        elif r["type"] == "NEW":
+            what = f"added, {r['new_time']}"
+        else:
+            what = f"removed (was {r['old_time']})"
+        body.append(f"<tr class='{cls}'><td>{html.escape(r['detected'])}</td><td><b>{r['type']}</b></td>"
+                    f"<td>{html.escape(day(r['game_date']))}</td><td>{html.escape(r['team'])}</td>"
+                    f"<td>{html.escape(r['home_away'])} {html.escape(r['opponent'])}</td><td>{html.escape(what)}</td></tr>")
+    page = f"""<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Concessions schedule changes</title>
+<style>body{{font-family:-apple-system,Helvetica,Arial,sans-serif;margin:16px;background:#fff;color:#111}}
+h1{{font-size:1.3em}} p{{color:#555;font-size:.9em}} table{{border-collapse:collapse;width:100%;font-size:.9em}}
+th,td{{text-align:left;padding:6px 8px;border-bottom:1px solid #ddd;vertical-align:top}} th{{background:#f3f3f3;position:sticky;top:0}}
+tr.new td:nth-child(2){{color:#1a7f37}} tr.chg td:nth-child(2){{color:#9a6700}} tr.rem td:nth-child(2){{color:#cf222e}}
+@media(max-width:600px){{table{{font-size:.8em}} td,th{{padding:5px 4px}}}}</style></head><body>
+<h1>Concessions schedule changes</h1>
+<p>Every change MaxPreps made to a First Christian home game, as detected by the hourly sync. Newest first.
+Page rebuilt {datetime.now(TZ).strftime('%b %-d, %Y %-I:%M %p')} ET. <a href="changes.csv">Download as spreadsheet (CSV)</a>.</p>
+<table><thead><tr><th>Detected</th><th>Change</th><th>Game date</th><th>Team</th><th>Opponent</th><th>What changed</th></tr></thead>
+<tbody>{''.join(body) if body else '<tr><td colspan=6>No changes recorded yet.</td></tr>'}</tbody></table></body></html>"""
+    LOG_HTML.write_text(page)
+
 
 def esc(s):
     return s.replace("\\", "\\\\").replace(";", "\\;").replace(",", "\\,").replace("\n", "\\n")
@@ -290,7 +374,8 @@ def main():
         for g in sorted(games.values(), key=lambda g: (g["date"], g["time"] or "")):
             print(g["date"], fmt12(g["time"]).rjust(7), "HOME" if g["home"] else "away", g["team"].ljust(12), g["opponent"])
         return
-    changes = [] if first_run else diff(old, games, today)
+    recs = [] if first_run else diff_records(old, games, today)
+    changes = diff(old, games, today) if recs else []
     OUT_ICS.parent.mkdir(parents=True, exist_ok=True)
     OUT_ICS.write_text(build_ics(games), newline="")
     STATE.write_text(json.dumps(games, indent=1, sort_keys=True))
@@ -299,6 +384,10 @@ def main():
         FAILS.unlink()
         if n >= ALERT_AFTER:
             notify("Concession schedule sync recovered", f"Back to normal after {n} failed checks.")
+    if recs:
+        append_change_log(recs)
+    elif not LOG_HTML.exists():
+        build_change_page()
     if changes:
         notify("Concessions schedule changed", "\n".join(changes))
     else:
