@@ -1,0 +1,30 @@
+detected,type,team,game_date,opponent,home_away,old_time,new_time,old_date,new_date,detail
+2026-09-29 15:20,CHANGED,BB Boys MS,2026-11-02,NCA,HOME,4:30pm,5:30pm,2026-11-02,2026-11-02,time 4:30pm -> 5:30pm
+2026-09-29 16:24,REMOVED,BB Boys MS,2026-11-19,Interlachen,HOME,5:00pm,,2026-11-19,,game removed
+2026-09-29 18:22,REMOVED,BB Boys V,2026-11-09,Varsity Opponent,HOME,7:30pm,,2026-11-09,,game removed
+2026-09-29 18:22,REMOVED,BB Girls MS,2026-12-08,JV Opponent,HOME,4:00pm,,2026-12-08,,game removed
+2026-09-29 18:22,REMOVED,VB MS,2026-09-29,JV Opponent,HOME,TBA,,2026-09-29,,game removed
+2026-09-29 21:01,NEW,BB Boys V,2026-11-09,Varsity Opponent,HOME,,7:30pm,,2026-11-09,game added
+2026-09-29 21:01,NEW,BB Girls MS,2026-12-08,JV Opponent,HOME,,4:00pm,,2026-12-08,game added
+2026-09-29 21:01,NEW,VB MS,2026-09-29,JV Opponent,HOME,,4:00pm,,2026-09-29,game added
+2026-09-30 09:26,NEW,VB Varsity,2026-10-06,GCCHS,HOME,,5:30pm,,2026-10-06,game added
+2026-10-02 10:25,NEW,BB Boys V,2026-11-09,Kingdom Culture,HOME,,7:30pm,,2026-11-09,game added
+2026-10-05 12:26,REMOVED,BB Girls MS,2027-01-11,Countryside Christian,HOME,4:00pm,,2027-01-11,,game removed
+2026-10-05 12:26,REMOVED,BB Boys V,2027-01-11,Countryside Christian,HOME,7:30pm,,2027-01-11,,game removed
+2026-10-05 12:26,REMOVED,BB Girls V,2027-01-11,Countryside Christian,HOME,6:00pm,,2027-01-11,,game removed
+2026-10-05 12:26,REMOVED,BB Boys MS,2027-01-11,Countryside Christian,HOME,5:00pm,,2027-01-11,,game removed
+2026-10-05 14:30,REMOVED,BB Girls V,2027-02-02,Hope Christian Academy,HOME,6:00pm,,2027-02-02,,game removed
+2026-10-05 14:30,REMOVED,BB Boys MS,2027-02-02,Hope Christian Academy,HOME,5:00pm,,2027-02-02,,game removed
+2026-10-05 14:30,REMOVED,BB Boys V,2027-02-02,Hope Christian Academy,HOME,7:30pm,,2027-02-02,,game removed
+2026-10-06 12:27,REMOVED,BB Boys V,2026-11-09,Varsity Opponent,HOME,7:30pm,,2026-11-09,,game removed
+2026-10-06 14:27,NEW,VB MS,2026-10-09,GCCHS,HOME,,4:30pm,,2026-10-09,game added
+2026-10-08 11:23,REMOVED,BB Girls V,2027-01-07,Redeemer Christian,HOME,5:30pm,,2027-01-07,,game removed
+2026-10-08 11:23,REMOVED,BB Girls MS,2027-01-08,The Villages Charter,HOME,5:00pm,,2027-01-08,,game removed
+2026-10-08 11:23,REMOVED,BB Girls V,2027-01-08,The Villages Charter,HOME,6:30pm,,2027-01-08,,game removed
+2026-10-09 19:21,NEW,VB MS,2026-10-09,Westwood Christian,HOME,,4:24pm,,2026-10-09,game added
+2026-10-15 10:22,NEW,VB MS,2026-10-16,JV Opponent,HOME,,11:00am,,2026-10-16,game added
+2026-10-17 23:24,NEW,VB Varsity,2026-10-17,OPCA,HOME,,12:00pm,,2026-10-17,game added
+2026-10-22 09:24,CHANGED,BB Boys V,2026-11-12,Riverside Christian,HOME,7:30pm,6:00pm,2026-11-12,2026-11-12,time 7:30pm -> 6:00pm
+2026-10-22 09:24,REMOVED,BB Girls V,2026-11-12,Riverside Christian,HOME,6:00pm,,2026-11-12,,game removed
+2026-10-27 11:24,CHANGED,BB Girls MS,2026-12-08,JV Opponent,HOME,4:00pm,5:00pm,2026-12-08,2026-12-08,time 4:00pm -> 5:00pm
+2026-10-28 15:14,NEW,BB Boys MS,2026-11-19,Interlachen,HOME,,5:00pm,,2026-11-19,game added
