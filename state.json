@@ -172,7 +172,7 @@
   "home": true,
   "opponent": "Riverside Christian",
   "team": "BB Boys V",
-  "time": "18:00"
+  "time": null
  },
  "3120f163-d18b-440f-88ff-0702f04d40e4": {
   "date": "2026-09-17",
@@ -361,7 +361,7 @@
   "home": true,
   "opponent": "Riverside Christian",
   "team": "BB Girls MS",
-  "time": null
+  "time": "16:00"
  },
  "68b9c3a6-debf-4c6a-b66e-388c983ac65e": {
   "date": "2026-12-17",
