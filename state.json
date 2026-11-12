@@ -643,13 +643,6 @@
   "team": "VB MS",
   "time": "16:30"
  },
- "ad0ed8dd-89ef-4c9b-a956-615adff88974": {
-  "date": "2026-12-11",
-  "home": true,
-  "opponent": "Bell",
-  "team": "BB Girls MS",
-  "time": "16:00"
- },
  "ade9e0c6-5620-41db-8358-4c584a6f223c": {
   "date": "2027-01-28",
   "home": false,
@@ -705,13 +698,6 @@
   "opponent": "GCCHS",
   "team": "BB Boys V",
   "time": "19:30"
- },
- "c5307aa0-f5e0-46b6-a991-3734bdb56489": {
-  "date": "2027-01-25",
-  "home": false,
-  "opponent": "Bell",
-  "team": "BB Girls MS",
-  "time": "16:00"
  },
  "c8252413-834f-4006-ad33-40279cacc5d2": {
   "date": "2027-02-04",

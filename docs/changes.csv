@@ -31,3 +31,4 @@ detected,type,team,game_date,opponent,home_away,old_time,new_time,old_date,new_d
 2026-11-04 22:16,NEW,BB Girls V,2026-12-18,Tournament Opponent,HOME,,8:00pm,,2026-12-18,game added
 2026-11-06 12:12,NEW,BB Girls V,2026-12-18,SAAHS,HOME,,8:00pm,,2026-12-18,game added
 2026-11-09 14:11,CHANGED,BB Boys V,2026-11-20,Cornerstone Academy,HOME,7:30pm,6:30pm,2026-11-20,2026-11-20,time 7:30pm -> 6:30pm
+2026-11-12 15:14,REMOVED,BB Girls MS,2026-12-11,Bell,HOME,4:00pm,,2026-12-11,,game removed
