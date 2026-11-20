@@ -263,7 +263,7 @@
   "home": false,
   "opponent": "JV Opponent",
   "team": "BB Girls MS",
-  "time": "17:00"
+  "time": null
  },
  "48e44d35-217c-4310-9a28-5a2067569aac": {
   "date": "2027-01-22",
@@ -501,7 +501,7 @@
   "home": true,
   "opponent": "Cornerstone Academy",
   "team": "BB Boys MS",
-  "time": "17:00"
+  "time": null
  },
  "933e72fb-e0fa-4b05-92c2-67124439b963": {
   "date": "2027-01-07",
