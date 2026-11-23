@@ -341,6 +341,58 @@ def build_ics(games):
     return "\r\n".join(folded) + "\r\n"
 
 
+# ----------------------------- per-team feeds -----------------------------
+TEAM_DIR = Path("docs/teams")
+GAME_MINUTES = 90          # length of a game event in the per-team feeds
+
+
+def team_slug(label):
+    return re.sub(r"[^a-z0-9]+", "-", label.lower()).strip("-")
+
+
+def fold(lines):
+    out = []
+    for line in lines:  # RFC 5545: fold lines longer than 75 bytes
+        while len(line.encode()) > 74:
+            cut = 74
+            while len(line[:cut].encode()) > 74:
+                cut -= 1
+            out.append(line[:cut]); line = " " + line[cut:]
+        out.append(line)
+    return "\r\n".join(out) + "\r\n"
+
+
+def build_team_ics(games, label):
+    """One calendar per team: every game (home AND away) at its real start time."""
+    now = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
+    out = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//maxpreps-concessions//EN", "CALSCALE:GREGORIAN",
+           f"X-WR-CALNAME:FCA {label}", "REFRESH-INTERVAL;VALUE=DURATION:PT1H", "X-PUBLISHED-TTL:PT1H"]
+    for cid, g in sorted(games.items(), key=lambda kv: (kv[1]["date"], kv[1]["time"] or "")):
+        if g["team"] != label:
+            continue
+        where = "vs" if g["home"] else ("@" if g["home"] is False else "vs?")
+        summary = f"{label} {where} {g['opponent']}" + ("" if g["time"] else " (time TBA)")
+        out += ["BEGIN:VEVENT", f"UID:game-{cid}@maxpreps-sync", f"DTSTAMP:{now}"]
+        if g["time"]:
+            s = datetime.strptime(f"{g['date']} {g['time']}", "%Y-%m-%d %H:%M").replace(tzinfo=TZ).astimezone(timezone.utc)
+            e = s + timedelta(minutes=GAME_MINUTES)
+            out += [f"DTSTART:{s:%Y%m%dT%H%M%SZ}", f"DTEND:{e:%Y%m%dT%H%M%SZ}"]
+        else:
+            d0 = datetime.strptime(g["date"], "%Y-%m-%d")
+            out += [f"DTSTART;VALUE=DATE:{d0:%Y%m%d}", f"DTEND;VALUE=DATE:{d0 + timedelta(days=1):%Y%m%d}"]
+        loc = HOME_LOCATION if g["home"] else (f"Away at {g['opponent']}" if g["home"] is False else "")
+        out += [f"SUMMARY:{esc(summary)}", f"LOCATION:{esc(loc)}",
+                f"DESCRIPTION:{esc('Source: MaxPreps (auto-synced hourly)')}", "END:VEVENT"]
+    out.append("END:VCALENDAR")
+    return fold(out)
+
+
+def write_team_feeds(games):
+    TEAM_DIR.mkdir(parents=True, exist_ok=True)
+    for label, _ in TEAMS:
+        (TEAM_DIR / f"{team_slug(label)}.ics").write_text(build_team_ics(games, label), newline="")
+
+
 def notify(title, message):
     print(f"[notify] {title}\n{message}")
     url = os.environ.get("NOTIFY_WEBHOOK")
@@ -378,6 +430,7 @@ def main():
     changes = diff(old, games, today) if recs else []
     OUT_ICS.parent.mkdir(parents=True, exist_ok=True)
     OUT_ICS.write_text(build_ics(games), newline="")
+    write_team_feeds(games)
     STATE.write_text(json.dumps(games, indent=1, sort_keys=True))
     if FAILS.exists():
         n = json.loads(FAILS.read_text())["count"]
